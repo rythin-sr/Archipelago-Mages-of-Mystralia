@@ -68,7 +68,7 @@ class MagesOfMystraliaWorld(World):
         be in the MultiWorld's regions and itempool, and these lists should not be modified afterwards.
         """
         create_events(self.multiworld, self.player)
-        create_items(self.multiworld, self.player)
+        create_items(self.multiworld, self, self.player)
 
     def set_rules(self) -> None:
         """

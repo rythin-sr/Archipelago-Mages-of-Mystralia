@@ -15,7 +15,11 @@ class ConnectionData:
 
 connections: List[ConnectionData] = \
 [
-    ConnectionData(EntranceName.Menu_StartGame, RegionName.Haven)
+    ConnectionData(EntranceName.Menu_StartGame, RegionName.Haven),
+    ConnectionData(EntranceName.Haven_WestHaven_DetonateWall, RegionName.WesternHaven),
+    ConnectionData(EntranceName.Haven_WindingGlade, RegionName.WindingGlade),
+    ConnectionData(EntranceName.Haven_MystralWoods, RegionName.MystralWoods),
+    ConnectionData(EntranceName.MystralWoods_GreyleafHamlet, RegionName.Greyleaf_Hamlet)
 ]
 
 
