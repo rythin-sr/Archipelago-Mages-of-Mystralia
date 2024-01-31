@@ -58,16 +58,16 @@ regions: Dict[str, EntranceData] = {
         LocationName.Haven_ManaLilyFour,
         LocationName.Haven_ManaLilyFive,
         LocationName.Haven_UnderBridge,
-        LocationName.Haven_HealthFountainOne,
-        LocationName.Haven_HealthFountainTwo,
-        LocationName.Haven_HealthFountainThree,
-        LocationName.Haven_HealthFountainFour,
-        LocationName.Haven_HealthFountainFive,
-        LocationName.Haven_ManaFountainOne,
-        LocationName.Haven_ManaFountainTwo,
-        LocationName.Haven_ManaFountainThree,
-        LocationName.Haven_ManaFountainFour,
-        LocationName.Haven_ManaFountainFive,
+        LocationName.Haven_UpgradeFountainOne,
+        LocationName.Haven_UpgradeFountainTwo,
+        LocationName.Haven_UpgradeFountainThree,
+        LocationName.Haven_UpgradeFountainFour,
+        LocationName.Haven_UpgradeFountainFive,
+        LocationName.Haven_UpgradeFountainSix,
+        LocationName.Haven_UpgradeFountainSeven,
+        LocationName.Haven_UpgradeFountainEight,
+        LocationName.Haven_UpgradeFountainNine,
+        LocationName.Haven_UpgradeFountainTen,
         LocationName.Haven_RandomRunePuzzleRoom,
         LocationName.Victory,
 
@@ -98,7 +98,6 @@ regions: Dict[str, EntranceData] = {
         LocationName.Placeholder_PurpleBead25,
         LocationName.Placeholder_PurpleBead26,
         LocationName.Placeholder_PurpleBead27,
-        LocationName.Placeholder_PurpleBead28,
         LocationName.Placeholder_DetonateRune
     ], [EntranceName.Haven_WindingGlade, EntranceName.Haven_WestHaven_DetonateWall, EntranceName.Haven_MystralWoods]),
     RegionName.WindingGlade: EntranceData(RegionName.WindingGlade, 
@@ -112,13 +111,69 @@ regions: Dict[str, EntranceData] = {
         LocationName.MystralWoods_ManaLilyCelestialPuzzle,
         LocationName.MystralWoods_ManaLily,
         LocationName.Placeholder_ManaLily1,
-        LocationName.Placeholder_ManaLily2
+        LocationName.Placeholder_ManaLily2,
+        LocationName.MystalWoodsMariesCart
     ],
     [
-        EntranceName.MystralWoods_GreyleafHamlet
+        EntranceName.MystralWoods_GreyleafHamlet,
+        EntranceName.MystralWoods_PostCart
+    ]),
+    RegionName.MystralWoodsPostCart: EntranceData(RegionName.MystralWoodsPostCart, 
+    [
+        LocationName.MystralWoods_PostCart_PurpleBeadPuzzleRoom
+    ],
+    [
+        EntranceName.MystralWoodsPostCart_GoblinCamp
+    ]),
+    RegionName.MystralWoodsGoblinCamp: EntranceData(RegionName.MystralWoodsGoblinCamp, 
+    [
+        LocationName.MystralWoods_GoblinCamp_BagOfWares
+    ],
+    [
+        EntranceName.MystralWoodsGoblinCamp_Lardee
+    ]),
+    RegionName.MystralWoodsLardeeArea: EntranceData(RegionName.MystralWoodsLardeeArea, 
+    [ 
+        LocationName.MystralWoods_Lardee_MoveRune
+    ],
+    [
+        EntranceName.MystralWoodsLardee_OldMines,
+        EntranceName.MystralWoodsLardee_DeepWoods
+    ]),
+    RegionName.MystralWoodsDeepWoods: EntranceData(RegionName.MystralWoodsDeepWoods, 
+    [ 
+        LocationName.MystralWoods_DeepWoods_BagOfWaresOne,
+        LocationName.MystralWoods_DeepWoods_BagOfWaresTwo,
+        LocationName.MystralWoods_DeepWoods_StrangeOldGoblin
+    ],
+    [
+        EntranceName.MystralWoodsDeepWoods_Twiggs,
+        EntranceName.MystralWoodsDeepWoods_BackWoods
+    ]),
+    RegionName.MystralWoodsTwiggs: EntranceData(RegionName.MystralWoodsTwiggs, 
+    [
+        LocationName.MystralWoods_Twiggs_LifeElixer
+    ],
+    [
+    ]),
+    RegionName.MystralWoodsBackWoods: EntranceData(RegionName.MystralWoodsBackWoods, 
+    [ 
+
+    ],
+    [
+        EntranceName.MystralWoodsBackWoods_GreyleafNorth
     ]),
     RegionName.Greyleaf_Hamlet: EntranceData(RegionName.Greyleaf_Hamlet,
     [
         LocationName.GreyleafHamlet_ManaLily
+    ], []),
+    RegionName.Greyleaf_Hamlet_North: EntranceData(RegionName.Greyleaf_Hamlet_North,
+    [], []),
+    RegionName.OldMinesLardeeArea: EntranceData(RegionName.OldMinesLardeeArea, 
+    [ 
+        LocationName.OldMinesLardee_BagOfWares
+    ],
+    [
+        
     ])
 }

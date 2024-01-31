@@ -19,7 +19,15 @@ connections: List[ConnectionData] = \
     ConnectionData(EntranceName.Haven_WestHaven_DetonateWall, RegionName.WesternHaven),
     ConnectionData(EntranceName.Haven_WindingGlade, RegionName.WindingGlade),
     ConnectionData(EntranceName.Haven_MystralWoods, RegionName.MystralWoods),
-    ConnectionData(EntranceName.MystralWoods_GreyleafHamlet, RegionName.Greyleaf_Hamlet)
+    ConnectionData(EntranceName.MystralWoods_GreyleafHamlet, RegionName.Greyleaf_Hamlet),
+    ConnectionData(EntranceName.MystralWoods_PostCart, RegionName.MystralWoodsPostCart),
+    ConnectionData(EntranceName.MystralWoodsPostCart_GoblinCamp, RegionName.MystralWoodsGoblinCamp),
+    ConnectionData(EntranceName.MystralWoodsGoblinCamp_Lardee, RegionName.MystralWoodsLardeeArea),
+    ConnectionData(EntranceName.MystralWoodsLardee_OldMines, RegionName.OldMinesLardeeArea),
+    ConnectionData(EntranceName.MystralWoodsLardee_DeepWoods, RegionName.MystralWoodsDeepWoods),
+    ConnectionData(EntranceName.MystralWoodsDeepWoods_Twiggs, RegionName.MystralWoodsTwiggs),
+    ConnectionData(EntranceName.MystralWoodsDeepWoods_BackWoods, RegionName.MystralWoodsBackWoods),
+    ConnectionData(EntranceName.MystralWoodsBackWoods_GreyleafNorth, RegionName.Greyleaf_Hamlet_North)
 ]
 
 

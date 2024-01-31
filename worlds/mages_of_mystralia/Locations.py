@@ -27,25 +27,22 @@ class MagesOfMystraliaLocation(Location):
 test_locations = [
     LocationData(1, LocationName.Haven_InfrontOfTower, ItemName.FiveGreenBeads),
     LocationData(2, LocationName.Haven_EnchanterManaLily, ItemName.ManaCharm),
-    #these should be progressive
-    LocationData(3, LocationName.Haven_ManaLilyTwo, ItemName.ManaCharm),
-    LocationData(4, LocationName.Haven_ManaLilyThree, ItemName.ManaCharm),
-    LocationData(5, LocationName.Haven_ManaLilyFour, ItemName.ManaCharm),
-    LocationData(6, LocationName.Haven_ManaLilyFive, ItemName.ManaCharm),
 
-    #these should be progressive
-    LocationData(7, LocationName.Haven_HealthFountainOne, ItemName.HealthUpgrade),
-    LocationData(8, LocationName.Haven_HealthFountainTwo, ItemName.HealthUpgrade),
-    LocationData(9, LocationName.Haven_HealthFountainThree, ItemName.HealthUpgrade),
-    LocationData(10, LocationName.Haven_HealthFountainFour, ItemName.HealthUpgrade),
-    LocationData(11, LocationName.Haven_HealthFountainFive, ItemName.HealthUpgrade),
+    LocationData(3, LocationName.Haven_ManaLilyTwo, ItemName.ManaCharm), #Costs 20 Green Soul Beads
+    LocationData(4, LocationName.Haven_ManaLilyThree, ItemName.ManaCharm), #Costs 20 Green Soul Beads
+    LocationData(5, LocationName.Haven_ManaLilyFour, ItemName.ManaCharm), #Costs 20 Green Soul Beads
+    LocationData(6, LocationName.Haven_ManaLilyFive, ItemName.ManaCharm), #Costs 20 Green Soul Beads
 
-    #these should be progressive
-    LocationData(12, LocationName.Haven_ManaFountainOne, ItemName.ManaUpgrade),
-    LocationData(13, LocationName.Haven_ManaFountainTwo, ItemName.ManaUpgrade),
-    LocationData(14, LocationName.Haven_ManaFountainThree, ItemName.ManaUpgrade),
-    LocationData(15, LocationName.Haven_ManaFountainFour, ItemName.ManaUpgrade),
-    LocationData(16, LocationName.Haven_ManaFountainFive, ItemName.ManaUpgrade),
+    LocationData(7, LocationName.Haven_UpgradeFountainOne, ItemName.HealthUpgrade),
+    LocationData(8, LocationName.Haven_UpgradeFountainTwo, ItemName.ManaUpgrade),
+    LocationData(9, LocationName.Haven_UpgradeFountainThree, ItemName.HealthUpgrade),
+    LocationData(10, LocationName.Haven_UpgradeFountainFour, ItemName.ManaUpgrade),
+    LocationData(11, LocationName.Haven_UpgradeFountainFive, ItemName.HealthUpgrade),
+    LocationData(12, LocationName.Haven_UpgradeFountainSix, ItemName.ManaUpgrade),
+    LocationData(13, LocationName.Haven_UpgradeFountainSeven, ItemName.HealthUpgrade),
+    LocationData(14, LocationName.Haven_UpgradeFountainEight, ItemName.ManaUpgrade),
+    LocationData(15, LocationName.Haven_UpgradeFountainNine, ItemName.HealthUpgrade),
+    LocationData(16, LocationName.Haven_UpgradeFountainTen, ItemName.ManaUpgrade),
     
     LocationData(17, LocationName.Haven_UnderBridge, ItemName.Purple_Soulbead),
     LocationData(18, LocationName.Haven_RandomRunePuzzleRoom, ItemName.RandomRune),
@@ -53,8 +50,16 @@ test_locations = [
 
     LocationData(20, LocationName.MystralWoods_ManaLilyCelestialPuzzle, ItemName.Purple_Soulbead),
     LocationData(21, LocationName.MystralWoods_ManaLily, ItemName.ManaLilyBulb),
+    LocationData(23, LocationName.MystralWoods_PostCart_PurpleBeadPuzzleRoom, ItemName.Purple_Soulbead),
+    LocationData(24, LocationName.MystralWoods_GoblinCamp_BagOfWares, ItemName.BagOfWares),
+    LocationData(25, LocationName.MystralWoods_Lardee_MoveRune, ItemName.MoveRune),
+    LocationData(26, LocationName.OldMinesLardee_BagOfWares, ItemName.BagOfWares),
+    LocationData(27, LocationName.MystralWoods_DeepWoods_BagOfWaresOne, ItemName.BagOfWares),
+    LocationData(28, LocationName.MystralWoods_DeepWoods_StrangeOldGoblin, ItemName.BigKey),
+    LocationData(29, LocationName.MystralWoods_DeepWoods_BagOfWaresTwo, ItemName.BagOfWares),
+    LocationData(30, LocationName.MystralWoods_Twiggs_LifeElixer, ItemName.WoodWretchElixer),
 
-    LocationData(22, LocationName.GreyleafHamlet_ManaLily, ItemName.ManaLilyBulb)
+    LocationData(22, LocationName.GreyleafHamlet_ManaLily, ItemName.ManaLilyBulb) #Costs 99 Green Soul Beads
 ]
 
 placeholder_locations = [
@@ -85,13 +90,14 @@ placeholder_locations = [
     LocationData(135, LocationName.Placeholder_PurpleBead25, ItemName.Purple_Soulbead),
     LocationData(136, LocationName.Placeholder_PurpleBead26, ItemName.Purple_Soulbead),
     LocationData(137, LocationName.Placeholder_PurpleBead27, ItemName.Purple_Soulbead),
-    LocationData(138, LocationName.Placeholder_PurpleBead28, ItemName.Purple_Soulbead),
-    LocationData(139, LocationName.Placeholder_ManaLily1, ItemName.ManaLilyBulb),
-    LocationData(140, LocationName.Placeholder_ManaLily2, ItemName.ManaLilyBulb),
-    LocationData(141, LocationName.Placeholder_DetonateRune, ItemName.DetonateRune)
+
+    LocationData(141, LocationName.Placeholder_ManaLily1, ItemName.ManaLilyBulb),
+    LocationData(142, LocationName.Placeholder_ManaLily2, ItemName.ManaLilyBulb),
+    LocationData(143, LocationName.Placeholder_DetonateRune, ItemName.DetonateRune)
 ]
 
 events = [
+    LocationData(None, LocationName.MystalWoodsMariesCart, ItemName.FixedMariesCart, LocationType.Event, True),
     LocationData(None, LocationName.Victory, ItemName.Victory, LocationType.Event, True)
 ]
 

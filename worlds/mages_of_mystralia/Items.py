@@ -37,28 +37,35 @@ class MagesOfMystraliaItem(Item):
 
 
 tutorial_items: List[ItemData] = [
-    ItemData(1, ItemName.Spellbook, ItemClassification.progression, ItemType.Focus),
+    ItemData(1, ItemName.Spellbook, ItemClassification.progression, ItemType.Wand),
     ItemData(2, ItemName.Immedi, ItemClassification.progression, ItemType.Focus),
     ItemData(3, ItemName.Actus, ItemClassification.progression, ItemType.Focus),
     ItemData(4, ItemName.Creo, ItemClassification.progression, ItemType.Focus),
-    ItemData(5, ItemName.Ego, ItemClassification.progression, ItemType.Focus)
+    ItemData(5, ItemName.Ego, ItemClassification.progression, ItemType.Focus),
+    ItemData(6, ItemName.ApprenticeWand, ItemClassification.progression, ItemType.Wand)
 ]
+
 
 test_items: List[ItemData] = [
     ItemData(10, ItemName.ManaCharm, ItemClassification.progression, ItemType.Consumable, 5),
     ItemData(11, ItemName.Purple_Soulbead, ItemClassification.progression, ItemType.Currency, 40),
-    ItemData(11, ItemName.HealthUpgrade, ItemClassification.useful, ItemType.Upgrade, 5),
-    ItemData(11, ItemName.ManaUpgrade, ItemClassification.useful, ItemType.Upgrade, 5),
-    ItemData(12, ItemName.FiveGreenBeads, ItemClassification.filler, ItemType.Currency),
-    ItemData(13, ItemName.TeleportRune, ItemClassification.useful, ItemType.Rune),
-    ItemData(14, ItemName.DetonateRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(15, ItemName.RandomRune, ItemClassification.useful, ItemType.Rune),
-    ItemData(16, ItemName.ManaLilyBulb, ItemClassification.progression, ItemType.Currency, 4)
+    ItemData(12, ItemName.HealthUpgrade, ItemClassification.useful, ItemType.Upgrade, 5),
+    ItemData(13, ItemName.ManaUpgrade, ItemClassification.useful, ItemType.Upgrade, 5),
+    ItemData(14, ItemName.FiveGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(15, ItemName.TeleportRune, ItemClassification.useful, ItemType.Rune),
+    ItemData(16, ItemName.DetonateRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(17, ItemName.RandomRune, ItemClassification.useful, ItemType.Rune),
+    ItemData(18, ItemName.ManaLilyBulb, ItemClassification.progression, ItemType.Currency, 4),
+    ItemData(19, ItemName.BagOfWares, ItemClassification.progression, ItemType.Quest, 4),
+    ItemData(20, ItemName.MoveRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(21, ItemName.BigKey, ItemClassification.progression, ItemType.Quest),
+    ItemData(22, ItemName.WoodWretchElixer, ItemClassification.useful, ItemType.Upgrade)
 ]
 
 
 events: List[EventItemData] = [
-   EventItemData(LocationName.Victory, ItemName.Victory)
+    EventItemData(LocationName.MystalWoodsMariesCart, ItemName.FixedMariesCart),
+    EventItemData(LocationName.Victory, ItemName.Victory)
 ]
 
 

@@ -5,16 +5,16 @@ class LocationName():
     Haven_ManaLilyThree = "Mana Lily Three"
     Haven_ManaLilyFour = "Mana Lily Four"
     Haven_ManaLilyFive = "Mana Lily Five"
-    Haven_HealthFountainOne = "Health Fountain One"
-    Haven_HealthFountainTwo = "Health Fountain Two"
-    Haven_HealthFountainThree = "Health Fountain Three"
-    Haven_HealthFountainFour = "Health Fountain Four"
-    Haven_HealthFountainFive = "Health Fountain Five"
-    Haven_ManaFountainOne = "Mana Fountain One"
-    Haven_ManaFountainTwo = "Mana Fountain Two"
-    Haven_ManaFountainThree = "Mana Fountain Three"
-    Haven_ManaFountainFour = "Mana Fountain Four"
-    Haven_ManaFountainFive = "Mana Fountain Five"
+    Haven_UpgradeFountainOne = "Upgrade Fountain One"
+    Haven_UpgradeFountainTwo = "Upgrade Fountain Two"
+    Haven_UpgradeFountainThree = "Upgrade Fountain Three"
+    Haven_UpgradeFountainFour = "Upgrade Fountain Four"
+    Haven_UpgradeFountainFive = "Upgrade Fountain Five"
+    Haven_UpgradeFountainSix = "Upgrade Fountain Six"
+    Haven_UpgradeFountainSeven = "Upgrade Fountain Seven"
+    Haven_UpgradeFountainEight = "Upgrade Fountain Eight"
+    Haven_UpgradeFountainNine = "Upgrade Fountain Nine"
+    Haven_UpgradeFountainTen = "Upgrade Fountain Ten"
     Haven_UnderBridge = "Hiding under the bridge in Haven"
     Haven_RandomRunePuzzleRoom = "Haven - Random Rune Puzzle Room"
 
@@ -22,9 +22,19 @@ class LocationName():
 
     MystralWoods_ManaLilyCelestialPuzzle = "Mystral Woods - Celastial Puzzle near Mana Lily"
     MystralWoods_ManaLily = "Mystral Woods - Mana Lily"
-
+    MystralWoods_PostCart_PurpleBeadPuzzleRoom = "Mystral Woods Behind Cart - Purple Bead Puzzle Room"
+    MystralWoods_GoblinCamp_BagOfWares = "Mystral Woods Goblin Camp - Bag Of Wares"
+    MystralWoods_Lardee_MoveRune = "Mystral Woods Lardee Reward - Move Rune"
+    MystralWoods_DeepWoods_BagOfWaresOne = "Mystral Woods Deep Woods - Bag Of Wares One"
+    MystralWoods_DeepWoods_StrangeOldGoblin = "Mystral Woods Deep Woods - Strange Old Goblin"
+    MystralWoods_DeepWoods_BagOfWaresTwo = "Mystral Woods Deep Woods - Bag Of Wares Two"
+    MystralWoods_Twiggs_LifeElixer = "Mystral Woods Twiggs - Life Elixer"
+ 
     GreyleafHamlet_ManaLily = "Greyleaf Hamlet - Mana Lily"
 
+    OldMinesLardee_BagOfWares = "Old Mines Lardee - Bag Of Wares"
+
+    MystalWoodsMariesCart = "Mystral Woods - Maries Cart"
     Victory = "Victory"
 
 
@@ -55,7 +65,7 @@ class LocationName():
     Placeholder_PurpleBead25 = "Placeholder_PurpleBead25"
     Placeholder_PurpleBead26 = "Placeholder_PurpleBead26"
     Placeholder_PurpleBead27 = "Placeholder_PurpleBead27"
-    Placeholder_PurpleBead28 = "Placeholder_PurpleBead28"
+
     Placeholder_ManaLily1 = "Placeholder_ManaLily1"
     Placeholder_ManaLily2 = "Placeholder_ManaLily2"
     Placeholder_DetonateRune = "Placeholder_DetonateRune"

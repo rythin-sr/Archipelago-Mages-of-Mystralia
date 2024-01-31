@@ -13,31 +13,55 @@ from BaseClasses import MultiWorld
 def set_entrance_rules(multiworld: MultiWorld, player: int):
     add_rule(multiworld.get_entrance(EntranceName.Haven_WestHaven_DetonateWall, player),
              lambda state: state.has(ItemName.DetonateRune, player))
+    
+    add_rule(multiworld.get_entrance(EntranceName.MystralWoods_PostCart, player),
+             lambda state: state.has_all([ItemName.Spellbook, ItemName.ApprenticeWand], player) and state.has_any([ItemName.Immedi, ItemName.Actus, ItemName.Creo], player))
+    
+    add_rule(multiworld.get_entrance(EntranceName.MystralWoodsPostCart_GoblinCamp, player),
+             lambda state: state.has_all([ItemName.Spellbook, ItemName.ApprenticeWand, ItemName.Immedi], player))
+    
+    add_rule(multiworld.get_entrance(EntranceName.MystralWoodsGoblinCamp_Lardee, player),
+             lambda state: state.has(ItemName.DetonateRune, player))
+    
+    add_rule(multiworld.get_entrance(EntranceName.MystralWoodsLardee_OldMines, player),
+             lambda state: state.has_all([ItemName.Actus, ItemName.MoveRune], player))    
+     
+    add_rule(multiworld.get_entrance(EntranceName.MystralWoodsLardee_DeepWoods, player),
+             lambda state: state.has_all([ItemName.Actus, ItemName.MoveRune], player)) 
+
+    add_rule(multiworld.get_entrance(EntranceName.MystralWoodsDeepWoods_Twiggs, player),
+             lambda state: state.has([ItemName.BigKey], player))
+    
+    add_rule(multiworld.get_entrance(EntranceName.MystralWoodsDeepWoods_Twiggs, player),
+             lambda state: state.can_reach(LocationName.MystralWoods_Twiggs_LifeElixer, 'Location', player)) 
+    
+    add_rule(multiworld.get_entrance(EntranceName.Haven_WestHaven_DetonateWall, player),
+             lambda state: state.has_all([ItemName.Spellbook, ItemName.ApprenticeWand] , player) and state.has(ItemName.Immedi, player))
+
 
 def set_access_rules(multiworld, player):
     add_rule(multiworld.get_location(LocationName.Victory, player),
-             lambda state: state.has(ItemName.ManaCharm, player, 5) and state.has_all([ItemName.Spellbook, ItemName.Immedi, ItemName.Actus, ItemName.Creo, ItemName.Ego], player))
+             lambda state: state.has(ItemName.ManaCharm, player, 5) and state.has_all([ItemName.Spellbook, ItemName.ApprenticeWand ,ItemName.Immedi, ItemName.Actus, ItemName.Creo, ItemName.Ego], player))
 
-    add_rule(multiworld.get_location(LocationName.Haven_HealthFountainOne, player),
+    add_rule(multiworld.get_location(LocationName.Haven_UpgradeFountainOne, player),
+             lambda state: state.has(ItemName.Purple_Soulbead, player, 4))
+    add_rule(multiworld.get_location(LocationName.Haven_UpgradeFountainTwo, player),
+             lambda state: state.has(ItemName.Purple_Soulbead, player, 8))
+    add_rule(multiworld.get_location(LocationName.Haven_UpgradeFountainThree, player),
+             lambda state: state.has(ItemName.Purple_Soulbead, player, 12))
+    add_rule(multiworld.get_location(LocationName.Haven_UpgradeFountainFour, player),
+             lambda state: state.has(ItemName.Purple_Soulbead, player, 16))
+    add_rule(multiworld.get_location(LocationName.Haven_UpgradeFountainFive, player),
+             lambda state: state.has(ItemName.Purple_Soulbead, player, 20))
+    add_rule(multiworld.get_location(LocationName.Haven_UpgradeFountainSix, player),
              lambda state: state.has(ItemName.Purple_Soulbead, player, 24))
-    add_rule(multiworld.get_location(LocationName.Haven_HealthFountainTwo, player),
+    add_rule(multiworld.get_location(LocationName.Haven_UpgradeFountainSeven, player),
              lambda state: state.has(ItemName.Purple_Soulbead, player, 28))
-    add_rule(multiworld.get_location(LocationName.Haven_HealthFountainThree, player),
+    add_rule(multiworld.get_location(LocationName.Haven_UpgradeFountainEight, player),
              lambda state: state.has(ItemName.Purple_Soulbead, player, 32))
-    add_rule(multiworld.get_location(LocationName.Haven_HealthFountainFour, player),
+    add_rule(multiworld.get_location(LocationName.Haven_UpgradeFountainNine, player),
              lambda state: state.has(ItemName.Purple_Soulbead, player, 36))
-    add_rule(multiworld.get_location(LocationName.Haven_HealthFountainFive, player),
-             lambda state: state.has(ItemName.Purple_Soulbead, player, 40))
-    
-    add_rule(multiworld.get_location(LocationName.Haven_ManaFountainOne, player),
-             lambda state: state.has(ItemName.Purple_Soulbead, player, 24))
-    add_rule(multiworld.get_location(LocationName.Haven_ManaFountainTwo, player),
-             lambda state: state.has(ItemName.Purple_Soulbead, player, 28))
-    add_rule(multiworld.get_location(LocationName.Haven_ManaFountainThree, player),
-             lambda state: state.has(ItemName.Purple_Soulbead, player, 32))
-    add_rule(multiworld.get_location(LocationName.Haven_ManaFountainFour, player),
-             lambda state: state.has(ItemName.Purple_Soulbead, player, 36))
-    add_rule(multiworld.get_location(LocationName.Haven_ManaFountainFive, player),
+    add_rule(multiworld.get_location(LocationName.Haven_UpgradeFountainTen, player),
              lambda state: state.has(ItemName.Purple_Soulbead, player, 40))
     
     
@@ -60,7 +84,12 @@ def set_access_rules(multiworld, player):
     
     add_rule(multiworld.get_location(LocationName.MystralWoods_ManaLily, player),
              lambda state: state.has(ItemName.Creo, player))
-
+    add_rule(multiworld.get_location(LocationName.MystralWoods_PostCart_PurpleBeadPuzzleRoom, player),
+             lambda state: state.has_all([ItemName.Creo, ItemName.Immedi, ItemName.Ego, ItemName.Actus], player))
+    add_rule(multiworld.get_location(LocationName.MystralWoods_Lardee_MoveRune, player),
+             lambda state: state.has(ItemName.Actus, player))
+    add_rule(multiworld.get_location(LocationName.MystralWoods_Twiggs_LifeElixer, player),
+             lambda state: state.has_all([ItemName.Actus, ItemName.MoveRune, ItemName.Immedi], player))
 
 def set_item_rules(multiworld, player):
     pass
