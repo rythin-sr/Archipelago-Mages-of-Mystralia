@@ -17,24 +17,68 @@ class LocationName():
     Haven_UpgradeFountainTen = "Upgrade Fountain Ten"
     Haven_UnderBridge = "Hiding under the bridge in Haven"
     Haven_RandomRunePuzzleRoom = "Haven - Random Rune Puzzle Room"
+    HavenWest_RemoteDetonateRock = "Haven - Remote Detonate Rock"
 
     WindingGlade_TeleportRunePuzzleRoom = "The Winding Glade - Teleport Rune Puzzle Room"
 
+    MystralWoods_TorchPuzzleOverchargeRune = "Mystral Woods - Torch Puzzle for Overcharge Rune"
     MystralWoods_ManaLilyCelestialPuzzle = "Mystral Woods - Celastial Puzzle near Mana Lily"
     MystralWoods_ManaLily = "Mystral Woods - Mana Lily"
     MystralWoods_PostCart_PurpleBeadPuzzleRoom = "Mystral Woods Behind Cart - Purple Bead Puzzle Room"
     MystralWoods_GoblinCamp_BagOfWares = "Mystral Woods Goblin Camp - Bag Of Wares"
     MystralWoods_Lardee_MoveRune = "Mystral Woods Lardee Reward - Move Rune"
+    MystralWoods_SuperLardee_AuraWand= "Mystral Woods Super Lardee Reward - Aura Wand"
     MystralWoods_DeepWoods_BagOfWaresOne = "Mystral Woods Deep Woods - Bag Of Wares One"
     MystralWoods_DeepWoods_StrangeOldGoblin = "Mystral Woods Deep Woods - Strange Old Goblin"
     MystralWoods_DeepWoods_BagOfWaresTwo = "Mystral Woods Deep Woods - Bag Of Wares Two"
     MystralWoods_Twiggs_LifeElixer = "Mystral Woods Twiggs - Life Elixer"
+    MystralWoods_Backwoods_DetonateTorch = "Mystral Woods Back Woods - Torch behind Detonate Rock"
  
     GreyleafHamlet_ManaLily = "Greyleaf Hamlet - Mana Lily"
+    GreyleafHamlet_JeffsGiftForwife = "Greyleaf Hamlet - Fund Jeffs Gift For Wife"
+    GreyleafHamlet_MariesBagOfWaresResult = "Greyleaf Hamlet - Maries Bag of Wares"
+
+    TheRiseSouth_CelestialPuzzle_CloseToMystralWoodsEntrance = "The Rise South - Celestial Puzzle Close to Mystral Woods"
+    TheRiseSouth_StrangeMan_IgniWand = "The Rise South - Strange Man"
+    TheRiseSouth_TorchPuzzleNearRopeBridges = "The Rise South - Torch Puzzle near Rope Bridges"
+
+    TheRise_SecretRuinsPath = "The Rise - Secret Ruines Doorway"
+    TheRise_RightRune = "The Rise - Right Rune"
+    TheRise_RightRunePuzzle = "The Rise - Right Rune Puzzle"
+    TheRise_ManaLily = "The Rise - Mana Lily"
+
+    
+    TheRiseNorth_HiddenUnderStairsPurpleSoulBead = "The Rise Upper - Purple Soulbead under Stairs"
+    TheRiseNorth_RuinsTorchPuzzle = "The Rise Upper - Ruins Torch Puzzle"
+    TheRistNorthUpperLedge_ImpactRune = "The Rise Upper Ledge - Impact Rune"
+
+    SkyTempleFrontDoorTorchPuzzle = "Sky Temple Front Door - Torch Puzzle"
+
+    SkyTempleHubDetonateRock = "Sky Temple Hub - Detonate Rock Green Beads Chest"
+    SkyTempleHubCelestialPuzzleTorch = "Sky Temple Hub - Celestial Puzzle Torch"
+    SkyTempleHubCampsightTorch = "Sky Temple Hub - Campsight Torch"
+    SkyTempleHubEastBigKey = "Sky Temple Hub East - Big Key Ambush"
+    SkyTempleHubEastPurpleSoulbeadBehindDetonate = "Sky Temple Hub East - Purple Soulbead behind Detonate Rock"
+    SkyTempleHubNorthDetonateRune = "Sky Temple Hub North - Detonate Rune"
+    SkyTempleHubNorthTorch = "Sky Temple Hub North - Torch near Detonate Rune"
+    SkyTempleHubNorthTorchBehindDetonateRock = "Sky Temple Hub North - Torch behind Detonate Rock"
+    SkyTempleHubEastTorchBehindDetonateRock = "Sky Temple Hub East - Torch behind Detonate Rock"
+    SkyTempleHubEastPuzzleRoomBehindDetonateRock = "Sky Temple Hub East - Puzzle Room behind Detonate Rock"
+    SkyTempleHubPuzzleMasteryRune = "Sky Temple Hub - Mastery Rune Chest"
+    SkyTempleHubChestBehindDetonateRock = "Sky Temple Hub - Chest behind Detonate Rock"
+    SkyTempleUpperBigKey = "Sky Temple Upper - Big Key"
+    SkyTempleUpperCombatPuzzleRoom = "Sky Temple Upper - Combat Puzzle Room"
+    SkyTempleUpperAncientLizardSleet = "Sky Temple Upper - Ancient Lizard Sleet"
+    SkyTempleUpperSleetsRemains = "Sky Temple Upper - Sky Shard"
+    SkyTempleUpperIceLizardElixerChest = "Sky Temple Upper - Ice Lizard Elixer Chest"
+    SkyTempleUpperCelestialPuzzleNearRemains = "Sky Temple Upper - Celestial Puzzle Near Ice Lizard Remains"
 
     OldMinesLardee_BagOfWares = "Old Mines Lardee - Bag Of Wares"
+    OldMinesLardee_PurpleBeadDetonateRock = "Old Mines Lardee - Purple Bead behind Detonate Rock"
 
     MystalWoodsMariesCart = "Mystral Woods - Maries Cart"
+    WoodWretchTwiggsFight = "Mystral Woods - Wood Wretch Twiggs"
+    MentorGreyleafhamlet = "Mentor Greyleaf Hamlet North - Eclipse is approaching"
     Victory = "Victory"
 
 
@@ -67,5 +111,3 @@ class LocationName():
     Placeholder_PurpleBead27 = "Placeholder_PurpleBead27"
 
     Placeholder_ManaLily1 = "Placeholder_ManaLily1"
-    Placeholder_ManaLily2 = "Placeholder_ManaLily2"
-    Placeholder_DetonateRune = "Placeholder_DetonateRune"

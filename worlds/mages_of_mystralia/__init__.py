@@ -85,6 +85,8 @@ class MagesOfMystraliaWorld(World):
         """
         Called after the previous steps. Some placement and player specific randomizations can be done here.
         """
+        # from Utils import visualize_regions
+        # visualize_regions(self.multiworld.get_region("Menu", self.player), "my_world.puml", show_entrance_names= True)
         pass
 
     

@@ -97,26 +97,31 @@ regions: Dict[str, EntranceData] = {
         LocationName.Placeholder_PurpleBead24,
         LocationName.Placeholder_PurpleBead25,
         LocationName.Placeholder_PurpleBead26,
-        LocationName.Placeholder_PurpleBead27,
-        LocationName.Placeholder_DetonateRune
+        LocationName.Placeholder_PurpleBead27
     ], [EntranceName.Haven_WindingGlade, EntranceName.Haven_WestHaven_DetonateWall, EntranceName.Haven_MystralWoods]),
     RegionName.WindingGlade: EntranceData(RegionName.WindingGlade, 
     [
         LocationName.WindingGlade_TeleportRunePuzzleRoom
     ]),
     RegionName.WesternHaven: EntranceData(RegionName.WesternHaven, 
-    []),
+    [
+        LocationName.HavenWest_RemoteDetonateRock
+    ],
+    [
+        EntranceName.WestHaven_RiseSouth
+    ]),
     RegionName.MystralWoods: EntranceData(RegionName.MystralWoods, 
     [
         LocationName.MystralWoods_ManaLilyCelestialPuzzle,
         LocationName.MystralWoods_ManaLily,
         LocationName.Placeholder_ManaLily1,
-        LocationName.Placeholder_ManaLily2,
-        LocationName.MystalWoodsMariesCart
+        LocationName.MystalWoodsMariesCart,
+        LocationName.MystralWoods_TorchPuzzleOverchargeRune
     ],
     [
-        EntranceName.MystralWoods_GreyleafHamlet,
-        EntranceName.MystralWoods_PostCart
+        EntranceName.MystralWoods_GreyleafHamletSouth,
+        EntranceName.MystralWoods_PostCart,
+        EntranceName.MystralWoods_MystralMiningArea
     ]),
     RegionName.MystralWoodsPostCart: EntranceData(RegionName.MystralWoodsPostCart, 
     [
@@ -134,7 +139,8 @@ regions: Dict[str, EntranceData] = {
     ]),
     RegionName.MystralWoodsLardeeArea: EntranceData(RegionName.MystralWoodsLardeeArea, 
     [ 
-        LocationName.MystralWoods_Lardee_MoveRune
+        LocationName.MystralWoods_Lardee_MoveRune,
+        LocationName.MystralWoods_SuperLardee_AuraWand
     ],
     [
         EntranceName.MystralWoodsLardee_OldMines,
@@ -152,6 +158,7 @@ regions: Dict[str, EntranceData] = {
     ]),
     RegionName.MystralWoodsTwiggs: EntranceData(RegionName.MystralWoodsTwiggs, 
     [
+        LocationName.WoodWretchTwiggsFight,
         LocationName.MystralWoods_Twiggs_LifeElixer
     ],
     [
@@ -161,17 +168,133 @@ regions: Dict[str, EntranceData] = {
 
     ],
     [
-        EntranceName.MystralWoodsBackWoods_GreyleafNorth
+        EntranceName.MystralWoodsBackWoods_GreyleafHamletNorth,
+        EntranceName.MystralWoodsBackWoods_BackWoodsWest
+    ]),
+    RegionName.MystralWoodsBackWoodsWest: EntranceData(RegionName.MystralWoodsBackWoodsWest, 
+    [ 
+        LocationName.MystralWoods_Backwoods_DetonateTorch
+    ],
+    [
+
+    ]),
+    RegionName.MystralWoodsMiningArea: EntranceData(RegionName.MystralWoodsMiningArea, 
+    [ 
+    ],
+    [
+
+    ]),
+    RegionName.Greyleaf_Hamlet_South: EntranceData(RegionName.Greyleaf_Hamlet_South,
+    [
+        LocationName.GreyleafHamlet_ManaLily
+    ], 
+    [
+        EntranceName.GreyleaHamletfSouth_GreyleafHamlet,
+        EntranceName.GreyleaHamletSouth_TheHighlands
+    ]),
+    RegionName.Greyleaf_Hamlet_North: EntranceData(RegionName.Greyleaf_Hamlet_North,
+    [
+        LocationName.MentorGreyleafhamlet
+    ], 
+    [
+        EntranceName.GreyleaHamletfNorth_GreyleafHamlet
     ]),
     RegionName.Greyleaf_Hamlet: EntranceData(RegionName.Greyleaf_Hamlet,
     [
-        LocationName.GreyleafHamlet_ManaLily
-    ], []),
-    RegionName.Greyleaf_Hamlet_North: EntranceData(RegionName.Greyleaf_Hamlet_North,
-    [], []),
+        LocationName.GreyleafHamlet_JeffsGiftForwife,
+        LocationName.GreyleafHamlet_MariesBagOfWaresResult
+    ], 
+    [
+
+    ]),
+    RegionName.RiseSouth: EntranceData(RegionName.RiseSouth,
+    [
+        LocationName.TheRiseSouth_CelestialPuzzle_CloseToMystralWoodsEntrance,
+        LocationName.TheRiseSouth_StrangeMan_IgniWand,
+        LocationName.TheRiseSouth_TorchPuzzleNearRopeBridges
+    ], 
+    [
+        EntranceName.RiseSouth_MystralWoodsBackWoodsWest,
+        EntranceName.RiseSouth_Rise
+    ]),
+    RegionName.TheRise: EntranceData(RegionName.TheRise,
+    [
+        LocationName.TheRise_SecretRuinsPath,
+        LocationName.TheRise_RightRune,
+        LocationName.TheRise_RightRunePuzzle,
+        LocationName.TheRise_ManaLily
+    ], 
+    [
+        EntranceName.Rise_RiseNorth,
+        EntranceName.Rise_LavaGrotto
+    ]),
+    RegionName.RiseNorth: EntranceData(RegionName.RiseNorth,
+    [
+        LocationName.TheRiseNorth_HiddenUnderStairsPurpleSoulBead,
+        LocationName.TheRiseNorth_RuinsTorchPuzzle
+    ], 
+    [
+        EntranceName.RiseNorth_SkyTempleFrontDoor
+    ]),
+    RegionName.SkyTempleFrontDoor: EntranceData(RegionName.SkyTempleFrontDoor,
+    [
+        LocationName.SkyTempleFrontDoorTorchPuzzle
+    ], 
+    [
+        EntranceName.SkyTempleFrontDoor_SkyTempleHubArea
+    ]),
+    RegionName.SkyTempleHub: EntranceData(RegionName.SkyTempleHub,
+    [
+        LocationName.SkyTempleHubDetonateRock,
+        LocationName.SkyTempleHubCelestialPuzzleTorch,
+        LocationName.SkyTempleHubCampsightTorch,
+        LocationName.SkyTempleHubEastBigKey,
+        LocationName.SkyTempleHubEastPurpleSoulbeadBehindDetonate,
+        LocationName.SkyTempleHubEastTorchBehindDetonateRock,
+        LocationName.SkyTempleHubEastPuzzleRoomBehindDetonateRock,
+        LocationName.SkyTempleHubChestBehindDetonateRock,
+        LocationName.SkyTempleHubPuzzleMasteryRune
+    ], 
+    [
+        EntranceName.SkyTempleHubArea_SkyTempleHubNorth,
+        EntranceName.SkyTempleHubArea_SkyTempleHubUpper
+    ]),
+    RegionName.SkyTempleHubNorth: EntranceData(RegionName.SkyTempleHubNorth,
+    [
+        LocationName.SkyTempleHubNorthDetonateRune,
+        LocationName.SkyTempleHubNorthTorch,
+        LocationName.SkyTempleHubNorthTorchBehindDetonateRock
+    ], 
+    [
+    ]),
+    RegionName.SkyTempleUpper: EntranceData(RegionName.SkyTempleUpper,
+    [
+        LocationName.SkyTempleUpperBigKey,
+        LocationName.SkyTempleUpperCombatPuzzleRoom,
+        LocationName.SkyTempleUpperAncientLizardSleet,
+        LocationName.SkyTempleUpperSleetsRemains,
+        LocationName.SkyTempleUpperIceLizardElixerChest,
+        LocationName.SkyTempleUpperCelestialPuzzleNearRemains,
+        LocationName.TheRistNorthUpperLedge_ImpactRune
+    ], 
+    [
+    ]),
     RegionName.OldMinesLardeeArea: EntranceData(RegionName.OldMinesLardeeArea, 
     [ 
-        LocationName.OldMinesLardee_BagOfWares
+        LocationName.OldMinesLardee_BagOfWares,
+        LocationName.OldMinesLardee_PurpleBeadDetonateRock
+    ],
+    [
+        
+    ]),
+    RegionName.Highlands: EntranceData(RegionName.Highlands, 
+    [ 
+    ],
+    [
+        
+    ]),
+    RegionName.LavaGrotto: EntranceData(RegionName.LavaGrotto, 
+    [ 
     ],
     [
         

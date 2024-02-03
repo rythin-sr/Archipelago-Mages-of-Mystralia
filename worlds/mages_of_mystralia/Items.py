@@ -58,13 +58,35 @@ test_items: List[ItemData] = [
     ItemData(18, ItemName.ManaLilyBulb, ItemClassification.progression, ItemType.Currency, 4),
     ItemData(19, ItemName.BagOfWares, ItemClassification.progression, ItemType.Quest, 4),
     ItemData(20, ItemName.MoveRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(21, ItemName.BigKey, ItemClassification.progression, ItemType.Quest),
-    ItemData(22, ItemName.WoodWretchElixer, ItemClassification.useful, ItemType.Upgrade)
+    ItemData(21, ItemName.BigKey, ItemClassification.progression, ItemType.Quest, 5),
+    ItemData(22, ItemName.WoodWretchElixer, ItemClassification.useful, ItemType.Upgrade),
+    ItemData(23, ItemName.Token, ItemClassification.progression, ItemType.Quest),
+    ItemData(24, ItemName.FiftyGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(25, ItemName.HomingRune, ItemClassification.useful, ItemType.Rune),
+    ItemData(26, ItemName.IgniWand, ItemClassification.useful, ItemType.Wand),
+    ItemData(27, ItemName.ThirtyGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(28, ItemName.RightRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(29, ItemName.TwentyFiveGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(30, ItemName.MasteryRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(31, ItemName.TenGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(32, ItemName.SkyShard, ItemClassification.progression, ItemType.Quest),
+    ItemData(33, ItemName.IceLizardElixer, ItemClassification.useful, ItemType.Upgrade),
+    ItemData(34, ItemName.ImpactRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(35, ItemName.OverchargeRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(36, ItemName.AuraWand, ItemClassification.useful, ItemType.Wand)
 ]
 
 
 events: List[EventItemData] = [
     EventItemData(LocationName.MystalWoodsMariesCart, ItemName.FixedMariesCart),
+    EventItemData(LocationName.WoodWretchTwiggsFight, ItemName.MystralWoodsCleansed),
+    EventItemData(LocationName.MentorGreyleafhamlet, ItemName.EclipseApproaching),
+    EventItemData(LocationName.SkyTempleUpperAncientLizardSleet, ItemName.DefeatSleet),
+    EventItemData(LocationName.SkyTempleHubCelestialPuzzleTorch, ItemName.SkyTempleTorch),
+    EventItemData(LocationName.SkyTempleHubCampsightTorch, ItemName.SkyTempleTorch),
+    EventItemData(LocationName.SkyTempleHubNorthTorch, ItemName.SkyTempleTorch),
+    EventItemData(LocationName.SkyTempleHubNorthTorchBehindDetonateRock, ItemName.SkyTempleTorch),
+    EventItemData(LocationName.SkyTempleHubEastTorchBehindDetonateRock, ItemName.SkyTempleTorch),
     EventItemData(LocationName.Victory, ItemName.Victory)
 ]
 

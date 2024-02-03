@@ -59,7 +59,41 @@ test_locations = [
     LocationData(29, LocationName.MystralWoods_DeepWoods_BagOfWaresTwo, ItemName.BagOfWares),
     LocationData(30, LocationName.MystralWoods_Twiggs_LifeElixer, ItemName.WoodWretchElixer),
 
-    LocationData(22, LocationName.GreyleafHamlet_ManaLily, ItemName.ManaLilyBulb) #Costs 99 Green Soul Beads
+    LocationData(22, LocationName.GreyleafHamlet_ManaLily, ItemName.ManaLilyBulb), #Costs 99 Green Soul Beads
+    LocationData(31, LocationName.GreyleafHamlet_JeffsGiftForwife, ItemName.Token), #Costs 75 Green Soul Beads
+
+    LocationData(32, LocationName.TheRiseSouth_CelestialPuzzle_CloseToMystralWoodsEntrance, ItemName.HomingRune),
+    LocationData(33, LocationName.TheRiseSouth_StrangeMan_IgniWand, ItemName.IgniWand),
+    LocationData(34, LocationName.TheRiseSouth_TorchPuzzleNearRopeBridges, ItemName.Purple_Soulbead),
+
+    LocationData(35, LocationName.TheRise_SecretRuinsPath, ItemName.ThirtyGreenBeads),
+    LocationData(36, LocationName.TheRise_RightRune, ItemName.RightRune),
+    LocationData(37, LocationName.TheRise_RightRunePuzzle, ItemName.BigKey),
+
+    LocationData(38, LocationName.TheRiseNorth_HiddenUnderStairsPurpleSoulBead, ItemName.Purple_Soulbead),
+    LocationData(39, LocationName.TheRiseNorth_RuinsTorchPuzzle, ItemName.Purple_Soulbead),
+
+    LocationData(40, LocationName.SkyTempleFrontDoorTorchPuzzle, ItemName.BigKey),
+    LocationData(41, LocationName.SkyTempleHubDetonateRock, ItemName.TwentyFiveGreenBeads),
+    LocationData(42, LocationName.SkyTempleHubEastBigKey, ItemName.BigKey),
+    LocationData(43, LocationName.SkyTempleHubNorthDetonateRune, ItemName.DetonateRune),
+    LocationData(44, LocationName.SkyTempleHubEastPurpleSoulbeadBehindDetonate, ItemName.Purple_Soulbead),
+    LocationData(45, LocationName.SkyTempleHubEastPuzzleRoomBehindDetonateRock, ItemName.Purple_Soulbead),
+    LocationData(46, LocationName.SkyTempleHubPuzzleMasteryRune, ItemName.MasteryRune),
+    LocationData(47, LocationName.SkyTempleHubChestBehindDetonateRock, ItemName.TenGreenBeads),
+    LocationData(48, LocationName.SkyTempleUpperBigKey, ItemName.BigKey),
+    LocationData(49, LocationName.SkyTempleUpperCombatPuzzleRoom, ItemName.Purple_Soulbead),
+    LocationData(50, LocationName.SkyTempleUpperSleetsRemains, ItemName.SkyShard),
+    LocationData(51, LocationName.SkyTempleUpperIceLizardElixerChest, ItemName.IceLizardElixer),
+    LocationData(52, LocationName.SkyTempleUpperCelestialPuzzleNearRemains, ItemName.Purple_Soulbead),
+    LocationData(53, LocationName.TheRistNorthUpperLedge_ImpactRune, ItemName.ImpactRune),
+
+    LocationData(54, LocationName.TheRise_ManaLily, ItemName.ManaLilyBulb),
+    LocationData(55, LocationName.MystralWoods_Backwoods_DetonateTorch, ItemName.Purple_Soulbead),
+    LocationData(56, LocationName.MystralWoods_TorchPuzzleOverchargeRune, ItemName.OverchargeRune),
+    LocationData(57, LocationName.MystralWoods_SuperLardee_AuraWand, ItemName.AuraWand),
+    LocationData(58, LocationName.OldMinesLardee_PurpleBeadDetonateRock, ItemName.Purple_Soulbead),
+    LocationData(59, LocationName.HavenWest_RemoteDetonateRock, ItemName.Purple_Soulbead)
 ]
 
 placeholder_locations = [
@@ -91,13 +125,19 @@ placeholder_locations = [
     LocationData(136, LocationName.Placeholder_PurpleBead26, ItemName.Purple_Soulbead),
     LocationData(137, LocationName.Placeholder_PurpleBead27, ItemName.Purple_Soulbead),
 
-    LocationData(141, LocationName.Placeholder_ManaLily1, ItemName.ManaLilyBulb),
-    LocationData(142, LocationName.Placeholder_ManaLily2, ItemName.ManaLilyBulb),
-    LocationData(143, LocationName.Placeholder_DetonateRune, ItemName.DetonateRune)
+    LocationData(151, LocationName.Placeholder_ManaLily1, ItemName.ManaLilyBulb)
 ]
 
 events = [
     LocationData(None, LocationName.MystalWoodsMariesCart, ItemName.FixedMariesCart, LocationType.Event, True),
+    LocationData(None, LocationName.WoodWretchTwiggsFight, ItemName.MystralWoodsCleansed, LocationType.Event, True),
+    LocationData(None, LocationName.SkyTempleUpperAncientLizardSleet, ItemName.DefeatSleet, LocationType.Event, True),
+    LocationData(None, LocationName.MentorGreyleafhamlet, ItemName.EclipseApproaching, LocationType.Event, True),
+    LocationData(None, LocationName.SkyTempleHubCelestialPuzzleTorch, ItemName.SkyTempleTorch, LocationType.Event, True),
+    LocationData(None, LocationName.SkyTempleHubCampsightTorch, ItemName.SkyTempleTorch, LocationType.Event, True),
+    LocationData(None, LocationName.SkyTempleHubNorthTorch, ItemName.SkyTempleTorch, LocationType.Event, True),
+    LocationData(None, LocationName.SkyTempleHubNorthTorchBehindDetonateRock, ItemName.SkyTempleTorch, LocationType.Event, True),
+    LocationData(None, LocationName.SkyTempleHubEastTorchBehindDetonateRock, ItemName.SkyTempleTorch, LocationType.Event, True),
     LocationData(None, LocationName.Victory, ItemName.Victory, LocationType.Event, True)
 ]
 

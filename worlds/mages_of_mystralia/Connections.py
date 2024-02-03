@@ -19,7 +19,8 @@ connections: List[ConnectionData] = \
     ConnectionData(EntranceName.Haven_WestHaven_DetonateWall, RegionName.WesternHaven),
     ConnectionData(EntranceName.Haven_WindingGlade, RegionName.WindingGlade),
     ConnectionData(EntranceName.Haven_MystralWoods, RegionName.MystralWoods),
-    ConnectionData(EntranceName.MystralWoods_GreyleafHamlet, RegionName.Greyleaf_Hamlet),
+    ConnectionData(EntranceName.WestHaven_RiseSouth, RegionName.RiseSouth),
+    ConnectionData(EntranceName.MystralWoods_GreyleafHamletSouth, RegionName.Greyleaf_Hamlet_South),
     ConnectionData(EntranceName.MystralWoods_PostCart, RegionName.MystralWoodsPostCart),
     ConnectionData(EntranceName.MystralWoodsPostCart_GoblinCamp, RegionName.MystralWoodsGoblinCamp),
     ConnectionData(EntranceName.MystralWoodsGoblinCamp_Lardee, RegionName.MystralWoodsLardeeArea),
@@ -27,7 +28,20 @@ connections: List[ConnectionData] = \
     ConnectionData(EntranceName.MystralWoodsLardee_DeepWoods, RegionName.MystralWoodsDeepWoods),
     ConnectionData(EntranceName.MystralWoodsDeepWoods_Twiggs, RegionName.MystralWoodsTwiggs),
     ConnectionData(EntranceName.MystralWoodsDeepWoods_BackWoods, RegionName.MystralWoodsBackWoods),
-    ConnectionData(EntranceName.MystralWoodsBackWoods_GreyleafNorth, RegionName.Greyleaf_Hamlet_North)
+    ConnectionData(EntranceName.MystralWoodsBackWoods_GreyleafHamletNorth, RegionName.Greyleaf_Hamlet_North),
+    ConnectionData(EntranceName.MystralWoodsBackWoods_BackWoodsWest, RegionName.MystralWoodsBackWoodsWest),
+    ConnectionData(EntranceName.GreyleaHamletfNorth_GreyleafHamlet, RegionName.Greyleaf_Hamlet),
+    ConnectionData(EntranceName.GreyleaHamletfSouth_GreyleafHamlet, RegionName.Greyleaf_Hamlet),
+    ConnectionData(EntranceName.RiseSouth_MystralWoodsBackWoodsWest, RegionName.MystralWoodsBackWoodsWest),
+    ConnectionData(EntranceName.RiseSouth_Rise, RegionName.TheRise),
+    ConnectionData(EntranceName.Rise_RiseNorth, RegionName.RiseNorth),
+    ConnectionData(EntranceName.RiseNorth_SkyTempleFrontDoor, RegionName.SkyTempleFrontDoor),
+    ConnectionData(EntranceName.SkyTempleFrontDoor_SkyTempleHubArea, RegionName.SkyTempleHub),
+    ConnectionData(EntranceName.SkyTempleHubArea_SkyTempleHubNorth, RegionName.SkyTempleHubNorth),
+    ConnectionData(EntranceName.SkyTempleHubArea_SkyTempleHubUpper, RegionName.SkyTempleUpper),
+    ConnectionData(EntranceName.Rise_LavaGrotto, RegionName.LavaGrotto),
+    ConnectionData(EntranceName.GreyleaHamletSouth_TheHighlands, RegionName.Highlands),
+    ConnectionData(EntranceName.MystralWoods_MystralMiningArea, RegionName.MystralWoodsMiningArea)
 ]
 
 
