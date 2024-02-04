@@ -58,10 +58,10 @@ test_items: List[ItemData] = [
     ItemData(18, ItemName.ManaLilyBulb, ItemClassification.progression, ItemType.Currency, 4),
     ItemData(19, ItemName.BagOfWares, ItemClassification.progression, ItemType.Quest, 4),
     ItemData(20, ItemName.MoveRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(21, ItemName.BigKey, ItemClassification.progression, ItemType.Quest, 5),
+    ItemData(21, ItemName.BigKey, ItemClassification.progression, ItemType.Quest, 10),
     ItemData(22, ItemName.WoodWretchElixer, ItemClassification.useful, ItemType.Upgrade),
     ItemData(23, ItemName.Token, ItemClassification.progression, ItemType.Quest),
-    ItemData(24, ItemName.FiftyGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(24, ItemName.FiftyGreenBeads, ItemClassification.filler, ItemType.Currency, 2),
     ItemData(25, ItemName.HomingRune, ItemClassification.useful, ItemType.Rune),
     ItemData(26, ItemName.IgniWand, ItemClassification.useful, ItemType.Wand),
     ItemData(27, ItemName.ThirtyGreenBeads, ItemClassification.filler, ItemType.Currency),
@@ -73,7 +73,31 @@ test_items: List[ItemData] = [
     ItemData(33, ItemName.IceLizardElixer, ItemClassification.useful, ItemType.Upgrade),
     ItemData(34, ItemName.ImpactRune, ItemClassification.progression, ItemType.Rune),
     ItemData(35, ItemName.OverchargeRune, ItemClassification.filler, ItemType.Rune),
-    ItemData(36, ItemName.AuraWand, ItemClassification.useful, ItemType.Wand)
+    ItemData(36, ItemName.AuraWand, ItemClassification.useful, ItemType.Wand),
+    ItemData(37, ItemName.PortalStone, ItemClassification.useful, ItemType.Upgrade),
+    ItemData(38, ItemName.ArchmagesRobe, ItemClassification.useful, ItemType.Upgrade),
+    ItemData(39, ItemName.TrialWand, ItemClassification.useful, ItemType.Wand),
+    ItemData(40, ItemName.ProximityRune, ItemClassification.useful, ItemType.Rune),
+    ItemData(41, ItemName.FifteenGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(42, ItemName.TimeRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(43, ItemName.Pitchfork, ItemClassification.progression, ItemType.Quest),
+    ItemData(44, ItemName.SeventyFiveGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(45, ItemName.BoarMeat, ItemClassification.filler, ItemType.Quest),
+    ItemData(46, ItemName.GaeaWand, ItemClassification.useful, ItemType.Wand),
+    ItemData(47, ItemName.HotBread, ItemClassification.progression, ItemType.Quest),
+    ItemData(48, ItemName.BrokenPortalStone, ItemClassification.progression, ItemType.Quest),
+    ItemData(49, ItemName.Flowers, ItemClassification.progression, ItemType.Quest),
+    ItemData(50, ItemName.LifeStaff, ItemClassification.useful, ItemType.Wand),
+    ItemData(51, ItemName.AquaWand, ItemClassification.useful, ItemType.Wand),
+    ItemData(52, ItemName.BounceRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(53, ItemName.Badge, ItemClassification.progression, ItemType.Quest),
+    ItemData(54, ItemName.DuplicateRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(55, ItemName.InverseRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(56, ItemName.GhostQueenElixer, ItemClassification.useful, ItemType.Upgrade),
+    ItemData(57, ItemName.BottleForSpirits, ItemClassification.progression, ItemType.Quest),
+    ItemData(58, ItemName.EtherRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(59, ItemName.SizeRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(60, ItemName.RainRune, ItemClassification.useful, ItemType.Rune)
 ]
 
 
@@ -87,6 +111,7 @@ events: List[EventItemData] = [
     EventItemData(LocationName.SkyTempleHubNorthTorch, ItemName.SkyTempleTorch),
     EventItemData(LocationName.SkyTempleHubNorthTorchBehindDetonateRock, ItemName.SkyTempleTorch),
     EventItemData(LocationName.SkyTempleHubEastTorchBehindDetonateRock, ItemName.SkyTempleTorch),
+    EventItemData(LocationName.TombOfTheMageKing_GhostQueen, ItemName.DefeatGhostQueen),
     EventItemData(LocationName.Victory, ItemName.Victory)
 ]
 

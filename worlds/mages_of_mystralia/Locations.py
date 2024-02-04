@@ -93,7 +93,47 @@ test_locations = [
     LocationData(56, LocationName.MystralWoods_TorchPuzzleOverchargeRune, ItemName.OverchargeRune),
     LocationData(57, LocationName.MystralWoods_SuperLardee_AuraWand, ItemName.AuraWand),
     LocationData(58, LocationName.OldMinesLardee_PurpleBeadDetonateRock, ItemName.Purple_Soulbead),
-    LocationData(59, LocationName.HavenWest_RemoteDetonateRock, ItemName.Purple_Soulbead)
+    LocationData(59, LocationName.HavenWest_RemoteDetonateRock, ItemName.Purple_Soulbead),
+    LocationData(60, LocationName.Haven_PortalStone, ItemName.PortalStone), #costs 75 green soul beads
+
+    LocationData(61, LocationName.Haven_HallOfTrialsWaveFour, ItemName.Purple_Soulbead),
+    LocationData(62, LocationName.Haven_HallOfTrialsWaveEight, ItemName.ProximityRune),
+    LocationData(63, LocationName.Haven_HallOfTrialsWaveTwelve, ItemName.ArchmagesRobe),
+    LocationData(65, LocationName.Haven_HallOfTrialsTenMinutes, ItemName.TrialWand),
+    LocationData(66, LocationName.Haven_ChestNearManaFountain, ItemName.FifteenGreenBeads),
+    LocationData(67, LocationName.MystralWoodsMiningArea_PuzzleInTheOldMines, ItemName.Purple_Soulbead),
+    LocationData(68, LocationName.MystralWoodsMiningArea_TorchesInTheRiver, ItemName.Purple_Soulbead),
+    LocationData(69, LocationName.MystralWoodsMiningArea_WoodedCombatPuzzle, ItemName.TimeRune),
+    LocationData(70, LocationName.Highlands_Pitchfork, ItemName.Pitchfork),
+    LocationData(71, LocationName.Highlands_Farmer, ItemName.SeventyFiveGreenBeads),
+    LocationData(72, LocationName.Highlands_Fisherman, ItemName.AquaWand),
+    LocationData(73, LocationName.Highlands_Beggar, ItemName.BrokenPortalStone),
+    LocationData(74, LocationName.Highlands_GuardTowerStealthPuzzle, ItemName.GaeaWand),
+    LocationData(75, LocationName.Highlands_Baker, ItemName.HotBread), #costs 10 green soul beads
+    LocationData(76, LocationName.Highlands_TownsPersonOnPlatform, ItemName.Flowers),
+    LocationData(77, LocationName.TheRiseNorth_TravelingMerchantAnna, ItemName.LifeStaff),
+    LocationData(78, LocationName.Highlands_Boar, ItemName.BoarMeat),
+    LocationData(79, LocationName.Highlands_ChestOnSmallLandAcrossWater, ItemName.FiftyGreenBeads),
+    LocationData(80, LocationName.Highlands_SewerCelestialPuzzle, ItemName.Purple_Soulbead),
+    LocationData(81, LocationName.Highlands_PortBadge, ItemName.Badge),
+    LocationData(82, LocationName.Highlands_WaterWalkingTorchPuzzle, ItemName.BounceRune),
+    LocationData(83, LocationName.TombOfTheMageKing_BigKeyOne, ItemName.BigKey),
+    LocationData(84, LocationName.TombOfTheMageKing_DuplicateRuneChest, ItemName.DuplicateRune),
+    LocationData(85, LocationName.TombOfTheMageKing_SwampyPurpleBeadChest, ItemName.Purple_Soulbead),
+    LocationData(86, LocationName.TombOfTheMageKing_DuplicatePuzzleRoom, ItemName.Purple_Soulbead),
+    LocationData(87, LocationName.TombOfTheMageKing_BigKeyTwo, ItemName.BigKey),
+    LocationData(88, LocationName.TombOfTheMageKing_CelestialPuzzle, ItemName.Purple_Soulbead),
+    LocationData(89, LocationName.TombOfTheMageKing_BigKeyThree, ItemName.BigKey),
+    LocationData(90, LocationName.TombOfTheMageKing_BeamPuzzle, ItemName.Purple_Soulbead),
+    LocationData(91, LocationName.TombOfTheMageKing_BigKeyFour, ItemName.BigKey),
+    LocationData(92, LocationName.TombOfTheMageKing_PuzzleRoomInverseRune, ItemName.InverseRune),
+    LocationData(93, LocationName.TombOfTheMageKing_GhostQueenLifeElixer, ItemName.GhostQueenElixer),
+    LocationData(94, LocationName.Highlands_PortNecromancer, ItemName.BottleForSpirits),
+    LocationData(95, LocationName.Graveyard_StatueBigKey, ItemName.BigKey),
+    LocationData(96, LocationName.HighlandsUpper_BounceTorchPuzzle, ItemName.Purple_Soulbead),
+    LocationData(97, LocationName.HighlandsUpper_CelestialPuzzle, ItemName.EtherRune),
+    LocationData(98, LocationName.HighlandsUpper_LowerTorchPuzzle, ItemName.SizeRune),
+    LocationData(99, LocationName.TheRise_BouncePuzzle, ItemName.RainRune)
 ]
 
 placeholder_locations = [
@@ -115,15 +155,6 @@ placeholder_locations = [
     LocationData(126, LocationName.Placeholder_PurpleBead16, ItemName.Purple_Soulbead),
     LocationData(127, LocationName.Placeholder_PurpleBead17, ItemName.Purple_Soulbead),
     LocationData(128, LocationName.Placeholder_PurpleBead18, ItemName.Purple_Soulbead),
-    LocationData(129, LocationName.Placeholder_PurpleBead19, ItemName.Purple_Soulbead),
-    LocationData(130, LocationName.Placeholder_PurpleBead20, ItemName.Purple_Soulbead),
-    LocationData(131, LocationName.Placeholder_PurpleBead21, ItemName.Purple_Soulbead),
-    LocationData(132, LocationName.Placeholder_PurpleBead22, ItemName.Purple_Soulbead),
-    LocationData(133, LocationName.Placeholder_PurpleBead23, ItemName.Purple_Soulbead),
-    LocationData(134, LocationName.Placeholder_PurpleBead24, ItemName.Purple_Soulbead),
-    LocationData(135, LocationName.Placeholder_PurpleBead25, ItemName.Purple_Soulbead),
-    LocationData(136, LocationName.Placeholder_PurpleBead26, ItemName.Purple_Soulbead),
-    LocationData(137, LocationName.Placeholder_PurpleBead27, ItemName.Purple_Soulbead),
 
     LocationData(151, LocationName.Placeholder_ManaLily1, ItemName.ManaLilyBulb)
 ]
@@ -138,6 +169,7 @@ events = [
     LocationData(None, LocationName.SkyTempleHubNorthTorch, ItemName.SkyTempleTorch, LocationType.Event, True),
     LocationData(None, LocationName.SkyTempleHubNorthTorchBehindDetonateRock, ItemName.SkyTempleTorch, LocationType.Event, True),
     LocationData(None, LocationName.SkyTempleHubEastTorchBehindDetonateRock, ItemName.SkyTempleTorch, LocationType.Event, True),
+    LocationData(None, LocationName.TombOfTheMageKing_GhostQueen, ItemName.DefeatGhostQueen, LocationType.Event, True),
     LocationData(None, LocationName.Victory, ItemName.Victory, LocationType.Event, True)
 ]
 

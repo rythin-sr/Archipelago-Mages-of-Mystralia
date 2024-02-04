@@ -69,6 +69,12 @@ regions: Dict[str, EntranceData] = {
         LocationName.Haven_UpgradeFountainNine,
         LocationName.Haven_UpgradeFountainTen,
         LocationName.Haven_RandomRunePuzzleRoom,
+        LocationName.Haven_PortalStone,
+        LocationName.Haven_HallOfTrialsWaveFour,
+        LocationName.Haven_HallOfTrialsWaveEight,
+        LocationName.Haven_HallOfTrialsWaveTwelve,
+        LocationName.Haven_HallOfTrialsTenMinutes,
+        LocationName.Haven_ChestNearManaFountain,
         LocationName.Victory,
 
         LocationName.Placeholder_PurpleBead1,
@@ -88,16 +94,7 @@ regions: Dict[str, EntranceData] = {
         LocationName.Placeholder_PurpleBead15,
         LocationName.Placeholder_PurpleBead16,
         LocationName.Placeholder_PurpleBead17,
-        LocationName.Placeholder_PurpleBead18,
-        LocationName.Placeholder_PurpleBead19,
-        LocationName.Placeholder_PurpleBead20,
-        LocationName.Placeholder_PurpleBead21,
-        LocationName.Placeholder_PurpleBead22,
-        LocationName.Placeholder_PurpleBead23,
-        LocationName.Placeholder_PurpleBead24,
-        LocationName.Placeholder_PurpleBead25,
-        LocationName.Placeholder_PurpleBead26,
-        LocationName.Placeholder_PurpleBead27
+        LocationName.Placeholder_PurpleBead18
     ], [EntranceName.Haven_WindingGlade, EntranceName.Haven_WestHaven_DetonateWall, EntranceName.Haven_MystralWoods]),
     RegionName.WindingGlade: EntranceData(RegionName.WindingGlade, 
     [
@@ -180,6 +177,9 @@ regions: Dict[str, EntranceData] = {
     ]),
     RegionName.MystralWoodsMiningArea: EntranceData(RegionName.MystralWoodsMiningArea, 
     [ 
+        LocationName.MystralWoodsMiningArea_PuzzleInTheOldMines,
+        LocationName.MystralWoodsMiningArea_TorchesInTheRiver,
+        LocationName.MystralWoodsMiningArea_WoodedCombatPuzzle
     ],
     [
 
@@ -189,7 +189,6 @@ regions: Dict[str, EntranceData] = {
         LocationName.GreyleafHamlet_ManaLily
     ], 
     [
-        EntranceName.GreyleaHamletfSouth_GreyleafHamlet,
         EntranceName.GreyleaHamletSouth_TheHighlands
     ]),
     RegionName.Greyleaf_Hamlet_North: EntranceData(RegionName.Greyleaf_Hamlet_North,
@@ -226,15 +225,24 @@ regions: Dict[str, EntranceData] = {
     ], 
     [
         EntranceName.Rise_RiseNorth,
-        EntranceName.Rise_LavaGrotto
+        EntranceName.RiseUpperLedges
     ]),
     RegionName.RiseNorth: EntranceData(RegionName.RiseNorth,
     [
         LocationName.TheRiseNorth_HiddenUnderStairsPurpleSoulBead,
-        LocationName.TheRiseNorth_RuinsTorchPuzzle
+        LocationName.TheRiseNorth_RuinsTorchPuzzle,
+        LocationName.TheRiseNorth_TravelingMerchantAnna
     ], 
     [
         EntranceName.RiseNorth_SkyTempleFrontDoor
+    ]),
+    RegionName.RiseUpperLedges: EntranceData(RegionName.RiseUpperLedges,
+    [
+        LocationName.TheRise_BouncePuzzle
+    ], 
+    [
+        EntranceName.RiseUpperLedges_LavaGrotto,
+        EntranceName.RiseUpperLedges_SkyTemplePostSleet
     ]),
     RegionName.SkyTempleFrontDoor: EntranceData(RegionName.SkyTempleFrontDoor,
     [
@@ -271,7 +279,12 @@ regions: Dict[str, EntranceData] = {
     [
         LocationName.SkyTempleUpperBigKey,
         LocationName.SkyTempleUpperCombatPuzzleRoom,
-        LocationName.SkyTempleUpperAncientLizardSleet,
+        LocationName.SkyTempleUpperAncientLizardSleet
+    ], 
+    [
+    ]),
+    RegionName.SkyTemplePostSleetArea: EntranceData(RegionName.SkyTemplePostSleetArea,
+    [
         LocationName.SkyTempleUpperSleetsRemains,
         LocationName.SkyTempleUpperIceLizardElixerChest,
         LocationName.SkyTempleUpperCelestialPuzzleNearRemains,
@@ -288,7 +301,66 @@ regions: Dict[str, EntranceData] = {
         
     ]),
     RegionName.Highlands: EntranceData(RegionName.Highlands, 
+    [
+        LocationName.Highlands_Farmer,
+        LocationName.Highlands_Pitchfork,
+        LocationName.Highlands_Fisherman,
+        LocationName.Highlands_GuardTowerStealthPuzzle,
+        LocationName.Highlands_Baker,
+        LocationName.Highlands_Beggar,
+        LocationName.Highlands_TownsPersonOnPlatform,
+        LocationName.Highlands_Boar,
+        LocationName.Highlands_ChestOnSmallLandAcrossWater,
+        LocationName.Highlands_SewerCelestialPuzzle,
+        LocationName.Highlands_WaterWalkingTorchPuzzle,
+        LocationName.Highlands_PortBadge,
+        LocationName.Highlands_PortNecromancer
+    ],
+    [
+        EntranceName.Highlands_Graveyard
+    ]),
+    RegionName.HighlandsGraveyard: EntranceData(RegionName.HighlandsGraveyard, 
     [ 
+        LocationName.Graveyard_StatueBigKey
+    ],
+    [
+        EntranceName.Graveyard_TombOfTheMageKing,
+        EntranceName.Highlands_HighlandsUpper
+    ]),
+    RegionName.HighlandsUpperArea: EntranceData(RegionName.HighlandsUpperArea, 
+    [ 
+        LocationName.HighlandsUpper_BounceTorchPuzzle,
+        LocationName.HighlandsUpper_CelestialPuzzle,
+        LocationName.HighlandsUpper_LowerTorchPuzzle
+    ],
+    [
+    ]),
+    RegionName.TombOfMageKing: EntranceData(RegionName.TombOfMageKing, 
+    [
+        LocationName.TombOfTheMageKing_BigKeyOne,
+        LocationName.TombOfTheMageKing_SwampyPurpleBeadChest
+    ],
+    [
+        EntranceName.TombOfTheMageKing_TombOfTheMageKingSecondLevel
+    ]),
+    RegionName.TombOfMageKing_SecondLevel: EntranceData(RegionName.TombOfMageKing_SecondLevel, 
+    [ 
+        LocationName.TombOfTheMageKing_DuplicateRuneChest,
+        LocationName.TombOfTheMageKing_DuplicatePuzzleRoom,
+        LocationName.TombOfTheMageKing_BigKeyTwo,
+        LocationName.TombOfTheMageKing_CelestialPuzzle
+    ],
+    [
+        EntranceName.TombOfTheMageKingSecondLevel_TombOfTheMageKingThirdLevel
+    ]),
+    RegionName.TombOfMageKing_ThirdLevel: EntranceData(RegionName.TombOfMageKing_ThirdLevel, 
+    [ 
+        LocationName.TombOfTheMageKing_BigKeyThree,
+        LocationName.TombOfTheMageKing_BeamPuzzle,
+        LocationName.TombOfTheMageKing_BigKeyFour,
+        LocationName.TombOfTheMageKing_PuzzleRoomInverseRune,
+        LocationName.TombOfTheMageKing_GhostQueen,
+        LocationName.TombOfTheMageKing_GhostQueenLifeElixer
     ],
     [
         

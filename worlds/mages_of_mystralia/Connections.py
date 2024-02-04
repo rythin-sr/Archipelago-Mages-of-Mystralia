@@ -31,7 +31,6 @@ connections: List[ConnectionData] = \
     ConnectionData(EntranceName.MystralWoodsBackWoods_GreyleafHamletNorth, RegionName.Greyleaf_Hamlet_North),
     ConnectionData(EntranceName.MystralWoodsBackWoods_BackWoodsWest, RegionName.MystralWoodsBackWoodsWest),
     ConnectionData(EntranceName.GreyleaHamletfNorth_GreyleafHamlet, RegionName.Greyleaf_Hamlet),
-    ConnectionData(EntranceName.GreyleaHamletfSouth_GreyleafHamlet, RegionName.Greyleaf_Hamlet),
     ConnectionData(EntranceName.RiseSouth_MystralWoodsBackWoodsWest, RegionName.MystralWoodsBackWoodsWest),
     ConnectionData(EntranceName.RiseSouth_Rise, RegionName.TheRise),
     ConnectionData(EntranceName.Rise_RiseNorth, RegionName.RiseNorth),
@@ -39,9 +38,16 @@ connections: List[ConnectionData] = \
     ConnectionData(EntranceName.SkyTempleFrontDoor_SkyTempleHubArea, RegionName.SkyTempleHub),
     ConnectionData(EntranceName.SkyTempleHubArea_SkyTempleHubNorth, RegionName.SkyTempleHubNorth),
     ConnectionData(EntranceName.SkyTempleHubArea_SkyTempleHubUpper, RegionName.SkyTempleUpper),
-    ConnectionData(EntranceName.Rise_LavaGrotto, RegionName.LavaGrotto),
+    ConnectionData(EntranceName.RiseUpperLedges, RegionName.RiseUpperLedges),
+    ConnectionData(EntranceName.RiseUpperLedges_SkyTemplePostSleet, RegionName.SkyTemplePostSleetArea),
+    ConnectionData(EntranceName.RiseUpperLedges_LavaGrotto, RegionName.LavaGrotto),
     ConnectionData(EntranceName.GreyleaHamletSouth_TheHighlands, RegionName.Highlands),
-    ConnectionData(EntranceName.MystralWoods_MystralMiningArea, RegionName.MystralWoodsMiningArea)
+    ConnectionData(EntranceName.MystralWoods_MystralMiningArea, RegionName.MystralWoodsMiningArea),
+    ConnectionData(EntranceName.Highlands_Graveyard, RegionName.HighlandsGraveyard),
+    ConnectionData(EntranceName.Highlands_HighlandsUpper, RegionName.HighlandsUpperArea),
+    ConnectionData(EntranceName.Graveyard_TombOfTheMageKing, RegionName.TombOfMageKing),
+    ConnectionData(EntranceName.TombOfTheMageKing_TombOfTheMageKingSecondLevel, RegionName.TombOfMageKing_SecondLevel),
+    ConnectionData(EntranceName.TombOfTheMageKingSecondLevel_TombOfTheMageKingThirdLevel, RegionName.TombOfMageKing_ThirdLevel)
 ]
 
 
