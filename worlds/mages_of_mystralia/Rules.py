@@ -28,7 +28,7 @@ def can_block_wind(state: CollectionState, player: int) -> bool:
     return can_cast_spells(state, player) and state.has(ItemName.Ego, player)
 
 def can_walk_on_lava(state: CollectionState, player: int) -> bool:
-    pass
+    return can_cast_spells(state, player) and state.has_all([ItemName.Creo, ItemName.Gaea_Essence], player)
 
 def can_defeat_wood_wretch(state: CollectionState, player: int) -> bool:
     return can_light_torches(state, player) and state.has(ItemName.MoveRune, player)
@@ -103,11 +103,18 @@ def set_entrance_rules(multiworld: MultiWorld, player: int):
              lambda state: can_block_wind(state, player) and state.has(ItemName.Aqua_Essence, player)) 
     add_rule(multiworld.get_entrance(EntranceName.OldMinesKeyDoor, player),
              lambda state: state.has(ItemName.BigKey, player, 12)) 
+    add_rule(multiworld.get_entrance(EntranceName.RiseUpperLedges_LavaGrotto, player),
+             lambda state: can_walk_on_lava(state, player)) 
+    add_rule(multiworld.get_entrance(EntranceName.Haven_WindingGlade, player),
+             lambda state: state.has(ItemName.BrokenPortalStone, player))
 
 
 def set_access_rules(multiworld, player):
     add_rule(multiworld.get_location(LocationName.Victory, player),
-             lambda state: state.has(ItemName.DefeatGhostQueen, player))
+             lambda state: state.can_reach(LocationName.GreyleafHamletCave_Blasius, 'Location', player) and 
+             state.can_reach(LocationName.SunkenQuarry_Caelius, 'Location', player) and 
+             state.can_reach(LocationName.OldMines_Drusus, 'Location', player) and 
+             state.can_reach(LocationName.LavaGrotto_Flavius, 'Location', player))
 
     add_rule(multiworld.get_location(LocationName.Haven_UpgradeFountainOne, player),
              lambda state: state.has(ItemName.Purple_Soulbead, player, 4))
@@ -269,7 +276,7 @@ def set_access_rules(multiworld, player):
     add_rule(multiworld.get_location(LocationName.GreyleafHamlet_Xavier, player),
              lambda state: state.has_all([ItemName.DefeatGhostQueen, ItemName.RepairedPitchfork], player))
     add_rule(multiworld.get_location(LocationName.Highlands_CousinsFarmer, player),
-             lambda state: state.has_all([ItemName.DefeatGhostQueen], player))
+             lambda state: state.has_all([ItemName.DefeatGhostQueen, ItemName.Pitchfork], player))
     add_rule(multiworld.get_location(LocationName.GreyleafHamlet_Zako, player),
              lambda state: state.has_all([ItemName.DefeatGhostQueen, ItemName.BrokenPitchfork, ItemName.ChunkOfMetal], player))
     add_rule(multiworld.get_location(LocationName.HighlandsUpper_GoblinBreadThieves, player),
@@ -284,6 +291,45 @@ def set_access_rules(multiworld, player):
              lambda state: can_light_torches(state, player) and state.has(ItemName.MoveRune, player))
     add_rule(multiworld.get_location(LocationName.MystralWoodsMiningArea_PuzzleInTheOldMines, player),
              lambda state: can_light_torches(state, player) and state.has_all([ItemName.MoveRune, ItemName.LeftRune, ItemName.BounceRune], player))
+    add_rule(multiworld.get_location(LocationName.TheRiseSouth_GoblinAmbush_CloseToMystralWoodsEntrance, player),
+             lambda state: state.has_all([ItemName.DefeatGhostQueen], player))
+    add_rule(multiworld.get_location(LocationName.TheRise_ChestAcrossLava, player),
+             lambda state: can_walk_on_lava(state, player))
+    add_rule(multiworld.get_location(LocationName.TheRise_GhostStatueAcrossLava, player),
+             lambda state: can_walk_on_lava(state, player) and state.has(ItemName.BottleForSpirits, player))
+    add_rule(multiworld.get_location(LocationName.LavaGrotto_TorchPuzzleBehindLavaWaterfall, player),
+             lambda state: can_light_torches(state, player) and state.has_all([ItemName.DuplicateRune, ItemName.ImpactRune, ItemName.MoveRune], player))
+    add_rule(multiworld.get_location(LocationName.LavaGrotto_RockPillarPurpleBead, player),
+             lambda state: can_light_torches(state, player) and state.has_all([ItemName.ImpactRune, ItemName.MoveRune], player))
+    add_rule(multiworld.get_location(LocationName.LavaGrotto_DrainedLavaPoolPurpleBead, player),
+             lambda state: can_light_torches(state, player) and state.has_all([ItemName.RightRune, ItemName.TimeRune, ItemName.BounceRune, ItemName.MoveRune], player))
+    add_rule(multiworld.get_location(LocationName.LavaGrotto_RockPillarToCombatRoomPurpleBead, player),
+             lambda state: can_light_torches(state, player) and state.has_all([ItemName.ImpactRune, ItemName.MoveRune], player))
+    add_rule(multiworld.get_location(LocationName.LavaGrotto_Flavius, player),
+             lambda state: can_activate_starswitch(state, player) and state.has_all([ItemName.MoveRune], player))
+    add_rule(multiworld.get_location(LocationName.TheRise_SerpentLockedDoor, player),
+             lambda state: state.has_all([ItemName.SkyShard, ItemName.DefeatGhostQueen], player))
+    add_rule(multiworld.get_location(LocationName.TheRise_WaterfallPurpleBead, player),
+             lambda state: can_block_wind(state, player) and state.has(ItemName.HomingRune, player))
+    add_rule(multiworld.get_location(LocationName.GreyleafHamlet_WaterboundPurpleBead, player),
+             lambda state: can_block_wind(state, player) and state.has_all([ItemName.HomingRune, ItemName.DefeatGhostQueen], player))
+    add_rule(multiworld.get_location(LocationName.GreyleafHamlet_GraveyardGhostStatue, player),
+             lambda state: state.has_all([ItemName.BottleForSpirits, ItemName.DefeatGhostQueen], player))
+    add_rule(multiworld.get_location(LocationName.Highlands_CliffsidePurpleBead, player),
+             lambda state: can_block_wind(state, player) and state.has(ItemName.HomingRune, player))
+    add_rule(multiworld.get_location(LocationName.HighlandsUpper_GhostStatue, player),
+             lambda state: state.has(ItemName.BottleForSpirits, player))
+    add_rule(multiworld.get_location(LocationName.MystralWoods_ManaLilyCelestialPuzzle, player),
+             lambda state: can_walk_on_lava(state, player) and state.has(ItemName.SizeRune, player))
+    add_rule(multiworld.get_location(LocationName.Highlands_PortNecromancerGhostBusters, player),
+             lambda state: state.has(ItemName.BottledGhost, player, 3) and state.has(ItemName.DefeatGhostQueen, player))
+    add_rule(multiworld.get_location(LocationName.Highlands_SouthernTorchPuzzle, player),
+             lambda state: can_light_torches(state, player) and state.has_all([ItemName.MoveRune, ItemName.PeriodicRune], player))
+    add_rule(multiworld.get_location(LocationName.TheRise_ChestNearDarkTower, player),
+             lambda state: can_block_wind(state, player) and state.has_all([ItemName.DefeatGhostQueen, ItemName.MoveRune], player))
+    add_rule(multiworld.get_location(LocationName.MystralWoods_DeepWoods_StrangeOldGoblinRippingYouOff, player),
+             lambda state: state.has_all([ItemName.MystralWoodsCleansed, ItemName.DefeatGhostQueen], player))
+
 
 
 

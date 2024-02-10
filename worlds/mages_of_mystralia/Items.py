@@ -67,7 +67,7 @@ test_items: List[ItemData] = [
     ItemData(26, ItemName.IgniWand, ItemClassification.useful, ItemType.Wand),
     ItemData(27, ItemName.ThirtyGreenBeads, ItemClassification.filler, ItemType.Currency),
     ItemData(28, ItemName.RightRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(29, ItemName.TwentyFiveGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(29, ItemName.TwentyFiveGreenBeads, ItemClassification.filler, ItemType.Currency, 2),
     ItemData(30, ItemName.MasteryRune, ItemClassification.filler, ItemType.Rune),
     ItemData(31, ItemName.TenGreenBeads, ItemClassification.filler, ItemType.Currency),
     ItemData(32, ItemName.SkyShard, ItemClassification.progression, ItemType.Quest),
@@ -97,7 +97,7 @@ test_items: List[ItemData] = [
     ItemData(56, ItemName.GhostQueenElixer, ItemClassification.useful, ItemType.Upgrade),
     ItemData(57, ItemName.BottleForSpirits, ItemClassification.progression, ItemType.Quest),
     ItemData(58, ItemName.EtherRune, ItemClassification.filler, ItemType.Rune),
-    ItemData(59, ItemName.SizeRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(59, ItemName.SizeRune, ItemClassification.progression, ItemType.Rune),
     ItemData(60, ItemName.RainRune, ItemClassification.progression, ItemType.Rune),
     ItemData(61, ItemName.SwiftRune, ItemClassification.filler, ItemType.Rune),
     ItemData(62, ItemName.LeftRune, ItemClassification.progression, ItemType.Rune),
@@ -111,7 +111,10 @@ test_items: List[ItemData] = [
     ItemData(70, ItemName.Aqua_Essence, ItemClassification.progression, ItemType.Essence),
     ItemData(71, ItemName.ExpireRune, ItemClassification.filler, ItemType.Rune),
     ItemData(72, ItemName.Gaea_Essence, ItemClassification.progression, ItemType.Essence),
-    ItemData(73, ItemName.ChunkOfMetal, ItemClassification.progression, ItemType.Quest)
+    ItemData(73, ItemName.ChunkOfMetal, ItemClassification.progression, ItemType.Quest),
+    ItemData(74, ItemName.RodOfTheBerserker, ItemClassification.filler, ItemType.Wand),
+    ItemData(75, ItemName.TwentyGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(76, ItemName.PeriodicRune, ItemClassification.progression, ItemType.Rune)
 ]
 
 
@@ -126,6 +129,9 @@ events: List[EventItemData] = [
     EventItemData(LocationName.SkyTempleHubNorthTorchBehindDetonateRock, ItemName.SkyTempleTorch),
     EventItemData(LocationName.SkyTempleHubEastTorchBehindDetonateRock, ItemName.SkyTempleTorch),
     EventItemData(LocationName.TombOfTheMageKing_GhostQueen, ItemName.DefeatGhostQueen),
+    EventItemData(LocationName.TheRise_GhostStatueAcrossLava, ItemName.BottledGhost),
+    EventItemData(LocationName.GreyleafHamlet_GraveyardGhostStatue, ItemName.BottledGhost),
+    EventItemData(LocationName.HighlandsUpper_GhostStatue, ItemName.BottledGhost),
     EventItemData(LocationName.Victory, ItemName.Victory)
 ]
 

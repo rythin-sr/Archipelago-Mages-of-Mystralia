@@ -7,10 +7,13 @@ class ItemName():
     WoodWretchElixer = "Wood Wretch Elixer"
     IceLizardElixer = "Ice Lizard Elixer"
     GhostQueenElixer = "Ghost Queen Elixer"
+    MystralianElixer = "Mystralian Elixer"
+    AfterLifeElixer = "Afterlife Elixer"
 
     FiveGreenBeads = "5 Green Soulbeads"
     TenGreenBeads = "10 Green Soulbeads"
     FifteenGreenBeads = "15 Green Soulbeads"
+    TwentyGreenBeads =  "20 Green Soulbeads"
     TwentyFiveGreenBeads = "25 Green Soulbeads"
     ThirtyGreenBeads = "30 Green Soulbeads"
     FiftyGreenBeads = "50 Green Soulbeads"
@@ -28,6 +31,7 @@ class ItemName():
     LifeStaff = "Life Staff"
     Soul_Scepter = "Soul Scepter"
     NegationScepter = "Negation Scepter"
+    RodOfTheBerserker = "Rod Of The Berserker"
 
     Immedi = "Immedi" #default Wind Element
     Actus = "Actus" #Default Fire Element
@@ -61,6 +65,7 @@ class ItemName():
     PushRune = "Push Rune"
     AtOnceRune = "At Once Rune"
     ExpireRune = "Expire Rune"
+    PeriodicRune = "Periodic Rune"
 
     BagOfWares = "Bag Of Wares"
     Token = "Token"
@@ -85,4 +90,5 @@ class ItemName():
     DefeatGhostQueen = "Defeat Ghost Queen"
     EclipseApproaching = "Greyleaf Hamlet Eclipse Appraching"
     SkyTempleTorch = "Sky Temple Torch"
+    BottledGhost = "Bottled Ghost"
     Victory = "Victory"

@@ -76,17 +76,6 @@ regions: Dict[str, EntranceData] = {
         LocationName.Haven_HallOfTrialsTenMinutes,
         LocationName.Haven_ChestNearManaFountain,
         LocationName.Victory,
-
-        LocationName.Placeholder_PurpleBead1,
-        LocationName.Placeholder_PurpleBead2,
-        LocationName.Placeholder_PurpleBead3,
-        LocationName.Placeholder_PurpleBead4,
-        LocationName.Placeholder_PurpleBead5,
-        LocationName.Placeholder_PurpleBead6,
-        LocationName.Placeholder_PurpleBead7,
-        LocationName.Placeholder_PurpleBead8,
-        LocationName.Placeholder_PurpleBead9,
-        LocationName.Placeholder_PurpleBead10
     ], [EntranceName.Haven_WindingGlade, EntranceName.Haven_WestHaven_DetonateWall, EntranceName.Haven_MystralWoods]),
     RegionName.WindingGlade: EntranceData(RegionName.WindingGlade, 
     [
@@ -103,7 +92,6 @@ regions: Dict[str, EntranceData] = {
     [
         LocationName.MystralWoods_ManaLilyCelestialPuzzle,
         LocationName.MystralWoods_ManaLily,
-        LocationName.Placeholder_ManaLily1,
         LocationName.MystalWoodsMariesCart,
         LocationName.MystralWoods_TorchPuzzleOverchargeRune
     ],
@@ -139,7 +127,8 @@ regions: Dict[str, EntranceData] = {
     [ 
         LocationName.MystralWoods_DeepWoods_BagOfWaresOne,
         LocationName.MystralWoods_DeepWoods_BagOfWaresTwo,
-        LocationName.MystralWoods_DeepWoods_StrangeOldGoblin
+        LocationName.MystralWoods_DeepWoods_StrangeOldGoblin,
+        LocationName.MystralWoods_DeepWoods_StrangeOldGoblinRippingYouOff
     ],
     [
         EntranceName.MystralWoodsDeepWoods_Twiggs,
@@ -178,14 +167,16 @@ regions: Dict[str, EntranceData] = {
     ]),
     RegionName.Greyleaf_Hamlet_South: EntranceData(RegionName.Greyleaf_Hamlet_South,
     [
-        LocationName.GreyleafHamlet_ManaLily
+        LocationName.GreyleafHamlet_ManaLily,
+        LocationName.GreyleafHamlet_WaterboundPurpleBead
     ], 
     [
         EntranceName.GreyleaHamletSouth_TheHighlands
     ]),
     RegionName.Greyleaf_Hamlet_North: EntranceData(RegionName.Greyleaf_Hamlet_North,
     [
-        LocationName.MentorGreyleafhamlet
+        LocationName.MentorGreyleafhamlet,
+        LocationName.GreyleafHamlet_GraveyardGhostStatue
     ], 
     [
         EntranceName.GreyleaHamletfNorth_GreyleafHamlet
@@ -217,7 +208,10 @@ regions: Dict[str, EntranceData] = {
     [
         LocationName.TheRiseSouth_CelestialPuzzle_CloseToMystralWoodsEntrance,
         LocationName.TheRiseSouth_StrangeMan_IgniWand,
-        LocationName.TheRiseSouth_TorchPuzzleNearRopeBridges
+        LocationName.TheRiseSouth_TorchPuzzleNearRopeBridges,
+        LocationName.TheRiseSouth_GoblinAmbush_CloseToMystralWoodsEntrance,
+        LocationName.TheRise_SerpentLockedDoor,
+        LocationName.TheRise_WaterfallPurpleBead
     ], 
     [
         EntranceName.RiseSouth_MystralWoodsBackWoodsWest,
@@ -228,7 +222,8 @@ regions: Dict[str, EntranceData] = {
         LocationName.TheRise_SecretRuinsPath,
         LocationName.TheRise_RightRune,
         LocationName.TheRise_RightRunePuzzle,
-        LocationName.TheRise_ManaLily
+        LocationName.TheRise_ManaLily,
+        LocationName.TheRise_ChestNearDarkTower
     ], 
     [
         EntranceName.Rise_RiseNorth,
@@ -245,7 +240,10 @@ regions: Dict[str, EntranceData] = {
     ]),
     RegionName.RiseUpperLedges: EntranceData(RegionName.RiseUpperLedges,
     [
-        LocationName.TheRise_BouncePuzzle
+        LocationName.TheRise_BouncePuzzle,
+        LocationName.TheRise_ChestNearLavaGrotto,
+        LocationName.TheRise_ChestAcrossLava,
+        LocationName.TheRise_GhostStatueAcrossLava
     ], 
     [
         EntranceName.RiseUpperLedges_LavaGrotto,
@@ -322,6 +320,9 @@ regions: Dict[str, EntranceData] = {
         LocationName.Highlands_WaterWalkingTorchPuzzle,
         LocationName.Highlands_PortBadge,
         LocationName.Highlands_PortNecromancer,
+        LocationName.Highlands_CliffsidePurpleBead,
+        LocationName.Highlands_PortNecromancerGhostBusters,
+        LocationName.Highlands_SouthernTorchPuzzle,
         LocationName.Highlands_CousinsFarmer, #accessible post fire greyleaf hamlet
         LocationName.Highlands_BakerTwo #accessible post fire greyleaf hamlet
     ],
@@ -342,7 +343,9 @@ regions: Dict[str, EntranceData] = {
         LocationName.HighlandsUpper_BounceTorchPuzzle,
         LocationName.HighlandsUpper_CelestialPuzzle,
         LocationName.HighlandsUpper_LowerTorchPuzzle,
-        LocationName.HighlandsUpper_GoblinBreadThieves
+        LocationName.HighlandsUpper_GoblinBreadThieves,
+        LocationName.HighlandsUpper_GhostStatue,
+        LocationName.HighlandsUpper_ManaLily
     ],
     [
     ]),
@@ -409,6 +412,12 @@ regions: Dict[str, EntranceData] = {
     ]),
     RegionName.LavaGrotto: EntranceData(RegionName.LavaGrotto, 
     [ 
+        LocationName.LavaGrotto_CelestialPuzzle,
+        LocationName.LavaGrotto_TorchPuzzleBehindLavaWaterfall,
+        LocationName.LavaGrotto_RockPillarPurpleBead,
+        LocationName.LavaGrotto_DrainedLavaPoolPurpleBead,
+        LocationName.LavaGrotto_RockPillarToCombatRoomPurpleBead,
+        LocationName.LavaGrotto_Flavius
     ],
     [
         

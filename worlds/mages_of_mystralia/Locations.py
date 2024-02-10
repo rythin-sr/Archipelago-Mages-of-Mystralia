@@ -159,23 +159,27 @@ test_locations = [
     LocationData(122, LocationName.OldMines_CrystalCartPuzzle, ItemName.Purple_Soulbead),
     LocationData(123, LocationName.OldMines_CelestialPuzzle, ItemName.Purple_Soulbead),
     LocationData(124, LocationName.OldMines_Drusus, ItemName.Gaea_Essence),
-    LocationData(125, LocationName.GreyleafHamlet_Zako, ItemName.RepairedPitchfork)
+    LocationData(125, LocationName.GreyleafHamlet_Zako, ItemName.RepairedPitchfork),
+    LocationData(126, LocationName.TheRiseSouth_GoblinAmbush_CloseToMystralWoodsEntrance, ItemName.RodOfTheBerserker),
+    LocationData(127, LocationName.TheRise_ChestNearLavaGrotto, ItemName.TwentyFiveGreenBeads),
+    LocationData(128, LocationName.TheRise_ChestAcrossLava, ItemName.TwentyGreenBeads),
+    LocationData(129, LocationName.LavaGrotto_CelestialPuzzle, ItemName.Purple_Soulbead),
+    LocationData(130, LocationName.LavaGrotto_TorchPuzzleBehindLavaWaterfall, ItemName.PeriodicRune),
+    LocationData(131, LocationName.LavaGrotto_RockPillarPurpleBead, ItemName.Purple_Soulbead),
+    LocationData(132, LocationName.LavaGrotto_DrainedLavaPoolPurpleBead, ItemName.Purple_Soulbead),
+    LocationData(133, LocationName.LavaGrotto_RockPillarToCombatRoomPurpleBead, ItemName.Purple_Soulbead),
+    LocationData(134, LocationName.LavaGrotto_Flavius, ItemName.Igni_Essence),
+    LocationData(135, LocationName.TheRise_SerpentLockedDoor, ItemName.MystralianElixer),
+    LocationData(136, LocationName.TheRise_WaterfallPurpleBead, ItemName.Purple_Soulbead),
+    LocationData(137, LocationName.GreyleafHamlet_WaterboundPurpleBead, ItemName.Purple_Soulbead),
+    LocationData(138, LocationName.Highlands_CliffsidePurpleBead, ItemName.Purple_Soulbead),
+    LocationData(139, LocationName.HighlandsUpper_ManaLily, ItemName.ManaLilyBulb),
+    LocationData(140, LocationName.Highlands_PortNecromancerGhostBusters, ItemName.AfterLifeElixer),
+    LocationData(141, LocationName.Highlands_SouthernTorchPuzzle, ItemName.Purple_Soulbead),
+    LocationData(142, LocationName.TheRise_ChestNearDarkTower, ItemName.Purple_Soulbead),
+    LocationData(143, LocationName.MystralWoods_DeepWoods_StrangeOldGoblinRippingYouOff, ItemName.Purple_Soulbead)  #costs 999 green soul beads
 ]
 
-placeholder_locations = [
-    LocationData(211, LocationName.Placeholder_PurpleBead1, ItemName.Purple_Soulbead),
-    LocationData(212, LocationName.Placeholder_PurpleBead2, ItemName.Purple_Soulbead),
-    LocationData(213, LocationName.Placeholder_PurpleBead3, ItemName.Purple_Soulbead),
-    LocationData(214, LocationName.Placeholder_PurpleBead4, ItemName.Purple_Soulbead),
-    LocationData(215, LocationName.Placeholder_PurpleBead5, ItemName.Purple_Soulbead),
-    LocationData(216, LocationName.Placeholder_PurpleBead6, ItemName.Purple_Soulbead),
-    LocationData(217, LocationName.Placeholder_PurpleBead7, ItemName.Purple_Soulbead),
-    LocationData(218, LocationName.Placeholder_PurpleBead8, ItemName.Purple_Soulbead),
-    LocationData(219, LocationName.Placeholder_PurpleBead9, ItemName.Purple_Soulbead),
-    LocationData(220, LocationName.Placeholder_PurpleBead10, ItemName.Purple_Soulbead),
-
-    LocationData(251, LocationName.Placeholder_ManaLily1, ItemName.ManaLilyBulb)
-]
 
 events = [
     LocationData(None, LocationName.MystalWoodsMariesCart, ItemName.FixedMariesCart, LocationType.Event, True),
@@ -188,10 +192,13 @@ events = [
     LocationData(None, LocationName.SkyTempleHubNorthTorchBehindDetonateRock, ItemName.SkyTempleTorch, LocationType.Event, True),
     LocationData(None, LocationName.SkyTempleHubEastTorchBehindDetonateRock, ItemName.SkyTempleTorch, LocationType.Event, True),
     LocationData(None, LocationName.TombOfTheMageKing_GhostQueen, ItemName.DefeatGhostQueen, LocationType.Event, True),
+    LocationData(None, LocationName.TheRise_GhostStatueAcrossLava, ItemName.BottledGhost, LocationType.Event, True),
+    LocationData(None, LocationName.GreyleafHamlet_GraveyardGhostStatue, ItemName.BottledGhost, LocationType.Event, True),
+    LocationData(None, LocationName.HighlandsUpper_GhostStatue, ItemName.BottledGhost, LocationType.Event, True),
     LocationData(None, LocationName.Victory, ItemName.Victory, LocationType.Event, True)
 ]
 
 
 
-all_locations: List[LocationData] = test_locations + events + placeholder_locations
+all_locations: List[LocationData] = test_locations + events
 location_name_to_id: Dict[str, LocationData] = {location.name: location for location in all_locations if location.loc_type != LocationType.Event}
