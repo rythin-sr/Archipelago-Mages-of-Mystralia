@@ -86,15 +86,7 @@ regions: Dict[str, EntranceData] = {
         LocationName.Placeholder_PurpleBead7,
         LocationName.Placeholder_PurpleBead8,
         LocationName.Placeholder_PurpleBead9,
-        LocationName.Placeholder_PurpleBead10,
-        LocationName.Placeholder_PurpleBead11,
-        LocationName.Placeholder_PurpleBead12,
-        LocationName.Placeholder_PurpleBead13,
-        LocationName.Placeholder_PurpleBead14,
-        LocationName.Placeholder_PurpleBead15,
-        LocationName.Placeholder_PurpleBead16,
-        LocationName.Placeholder_PurpleBead17,
-        LocationName.Placeholder_PurpleBead18
+        LocationName.Placeholder_PurpleBead10
     ], [EntranceName.Haven_WindingGlade, EntranceName.Haven_WestHaven_DetonateWall, EntranceName.Haven_MystralWoods]),
     RegionName.WindingGlade: EntranceData(RegionName.WindingGlade, 
     [
@@ -182,7 +174,7 @@ regions: Dict[str, EntranceData] = {
         LocationName.MystralWoodsMiningArea_WoodedCombatPuzzle
     ],
     [
-
+        EntranceName.MystralWoodsMiningArea_OldMines
     ]),
     RegionName.Greyleaf_Hamlet_South: EntranceData(RegionName.Greyleaf_Hamlet_South,
     [
@@ -201,10 +193,25 @@ regions: Dict[str, EntranceData] = {
     RegionName.Greyleaf_Hamlet: EntranceData(RegionName.Greyleaf_Hamlet,
     [
         LocationName.GreyleafHamlet_JeffsGiftForwife,
-        LocationName.GreyleafHamlet_MariesBagOfWaresResult
+        LocationName.GreyleafHamlet_MariesBagOfWaresResult,
+        LocationName.GreyleafHamlet_FireRainPuzzle, #burning greyleaf
+        LocationName.GreyleafHamlet_BurnedTowerPuzzle, #burning greyleaf
+        LocationName.GreyleafHamlet_BarTorchPuzzleRoom, #burning greyleaf
+        LocationName.GreyleafHamlet_SavedTheCitizens, #burning greyleaf
+        LocationName.GreyleafHamlet_LedgeCombatPuzzleRoom, #burning greyleaf
+        LocationName.GreyleafHamlet_JeffsThankYouGift, #post burning greyleaf
+        LocationName.GreyleafHamlet_Xavier, #post burning greyleaf
+        LocationName.GreyleafHamlet_Zako #post burning greyleaf
     ], 
     [
-
+        EntranceName.GreyleafHamlet_GreyleafHamletCaves
+    ]),
+    RegionName.Greyleaf_Hamlet_Caves: EntranceData(RegionName.Greyleaf_Hamlet_Caves,
+    [
+        LocationName.GreyleafHamletCave_CelestialPuzzle,
+        LocationName.GreyleafHamletCave_Blasius
+    ], 
+    [
     ]),
     RegionName.RiseSouth: EntranceData(RegionName.RiseSouth,
     [
@@ -314,10 +321,13 @@ regions: Dict[str, EntranceData] = {
         LocationName.Highlands_SewerCelestialPuzzle,
         LocationName.Highlands_WaterWalkingTorchPuzzle,
         LocationName.Highlands_PortBadge,
-        LocationName.Highlands_PortNecromancer
+        LocationName.Highlands_PortNecromancer,
+        LocationName.Highlands_CousinsFarmer, #accessible post fire greyleaf hamlet
+        LocationName.Highlands_BakerTwo #accessible post fire greyleaf hamlet
     ],
     [
-        EntranceName.Highlands_Graveyard
+        EntranceName.Highlands_Graveyard,
+        EntranceName.Highlands_SunkenQuarry
     ]),
     RegionName.HighlandsGraveyard: EntranceData(RegionName.HighlandsGraveyard, 
     [ 
@@ -331,7 +341,8 @@ regions: Dict[str, EntranceData] = {
     [ 
         LocationName.HighlandsUpper_BounceTorchPuzzle,
         LocationName.HighlandsUpper_CelestialPuzzle,
-        LocationName.HighlandsUpper_LowerTorchPuzzle
+        LocationName.HighlandsUpper_LowerTorchPuzzle,
+        LocationName.HighlandsUpper_GoblinBreadThieves
     ],
     [
     ]),
@@ -361,6 +372,37 @@ regions: Dict[str, EntranceData] = {
         LocationName.TombOfTheMageKing_PuzzleRoomInverseRune,
         LocationName.TombOfTheMageKing_GhostQueen,
         LocationName.TombOfTheMageKing_GhostQueenLifeElixer
+    ],
+    [
+        
+    ]),
+    RegionName.SunkenQuarry: EntranceData(RegionName.SunkenQuarry, 
+    [
+        LocationName.SunkenQuarry_HiddenPuzzleRoomNorthWest,
+        LocationName.SunkenQuarry_LedgePuzzleRoomSouthEast,
+        LocationName.SunkenQuarry_SouthEastCactusChest,
+        LocationName.SunkenQuarry_CelestialPuzzleNorthEast,
+        LocationName.SunkenQuarry_NorthWaterChest,
+        LocationName.SunkenQuarry_NorthCombatArenaChest,
+        LocationName.SunkenQuarry_Caelius #locked behind the royal blobs boss fight
+    ],
+    [
+        
+    ]),
+    RegionName.OldMines: EntranceData(RegionName.OldMines, 
+    [ 
+        LocationName.OldMines_MetalIngot,
+        LocationName.OldMines_BigKey,
+        LocationName.OldMines_CrystalCombatPuzzleRoom
+    ],
+    [
+        EntranceName.OldMinesKeyDoor
+    ]),
+    RegionName.OldMinesKeyLocked: EntranceData(RegionName.OldMinesKeyLocked, 
+    [ 
+        LocationName.OldMines_CrystalCartPuzzle,
+        LocationName.OldMines_CelestialPuzzle,
+        LocationName.OldMines_Drusus
     ],
     [
         

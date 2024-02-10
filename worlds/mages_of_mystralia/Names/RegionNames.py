@@ -16,6 +16,7 @@ class RegionName():
     Greyleaf_Hamlet_South = "Greyleaf Hamlet - South"
     Greyleaf_Hamlet_North = "Greyleaf Hamlet - North"
     Greyleaf_Hamlet = "Greyleaf Hamlet"
+    Greyleaf_Hamlet_Caves = "Greyleaf Hamlet Caves"
 
     RiseSouth = "The Rise - South"
     TheRise = "The Rise"
@@ -33,3 +34,6 @@ class RegionName():
     TombOfMageKing = "Tomb Of The Mage King"
     TombOfMageKing_SecondLevel = "Tomb Of The Mage King - Second Level"
     TombOfMageKing_ThirdLevel = "Tomb Of The Mage King - Third Level"
+    SunkenQuarry = "Sunken Quarry"
+    OldMines = "Old Mines"
+    OldMinesKeyLocked = "Old Mines Key Locked"

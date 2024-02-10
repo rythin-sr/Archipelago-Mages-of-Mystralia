@@ -47,7 +47,11 @@ connections: List[ConnectionData] = \
     ConnectionData(EntranceName.Highlands_HighlandsUpper, RegionName.HighlandsUpperArea),
     ConnectionData(EntranceName.Graveyard_TombOfTheMageKing, RegionName.TombOfMageKing),
     ConnectionData(EntranceName.TombOfTheMageKing_TombOfTheMageKingSecondLevel, RegionName.TombOfMageKing_SecondLevel),
-    ConnectionData(EntranceName.TombOfTheMageKingSecondLevel_TombOfTheMageKingThirdLevel, RegionName.TombOfMageKing_ThirdLevel)
+    ConnectionData(EntranceName.TombOfTheMageKingSecondLevel_TombOfTheMageKingThirdLevel, RegionName.TombOfMageKing_ThirdLevel),
+    ConnectionData(EntranceName.GreyleafHamlet_GreyleafHamletCaves, RegionName.Greyleaf_Hamlet_Caves),
+    ConnectionData(EntranceName.Highlands_SunkenQuarry, RegionName.SunkenQuarry),
+    ConnectionData(EntranceName.MystralWoodsMiningArea_OldMines, RegionName.OldMines),
+    ConnectionData(EntranceName.OldMinesKeyDoor, RegionName.OldMinesKeyLocked)
 ]
 
 

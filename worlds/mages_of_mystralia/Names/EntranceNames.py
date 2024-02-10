@@ -32,3 +32,7 @@ class EntranceName():
     Graveyard_TombOfTheMageKing = "Graveyard - Tomb Of The Mage King"
     TombOfTheMageKing_TombOfTheMageKingSecondLevel = "Tomb Of The Mage King - Tomb Of The Mage King Second Level"
     TombOfTheMageKingSecondLevel_TombOfTheMageKingThirdLevel = "Tomb Of The Mage King Second Level - Tomb Of The Mage King Third Level"
+    GreyleafHamlet_GreyleafHamletCaves = "Greyleaf Hamlet - Greyleaf Hamlet Caves"
+    Highlands_SunkenQuarry = "Highlands - Sunken Quarry"
+    MystralWoodsMiningArea_OldMines = "MystralWoods Mining Area - OldMines"
+    OldMinesKeyDoor = "OldMines - Old Mines Key Locked"

@@ -26,11 +26,18 @@ class ItemName():
     AquaWand = "Aqua Wand"
     TrialWand = "Trial Wand"
     LifeStaff = "Life Staff"
+    Soul_Scepter = "Soul Scepter"
+    NegationScepter = "Negation Scepter"
 
     Immedi = "Immedi" #default Wind Element
     Actus = "Actus" #Default Fire Element
     Creo = "Creo" #Default Ice Element
     Ego = "Ego" #Default Earth Element
+
+    Aura_Essence = "Aura Essence"
+    Aqua_Essence = "Aqua Essence"
+    Gaea_Essence = "Gaea Essence"
+    Igni_Essence = "Igni Essence"
 
     TeleportRune = "Teleport Rune"
     DetonateRune = "Detonate Rune"
@@ -49,6 +56,11 @@ class ItemName():
     EtherRune = "Ether Rune"
     SizeRune = "Size Rune"
     RainRune = "Rain Rune"
+    SwiftRune = "Swift Rune"
+    LeftRune = "Left Rune"
+    PushRune = "Push Rune"
+    AtOnceRune = "At Once Rune"
+    ExpireRune = "Expire Rune"
 
     BagOfWares = "Bag Of Wares"
     Token = "Token"
@@ -62,6 +74,10 @@ class ItemName():
     Flowers = "Flowers"
     Badge = "Badge"
     BottleForSpirits = "Bottle For Spirits"
+    BrokenPitchfork = "Broken Pitchfork"
+    LoavesOfBread = "A Lot of Loaves Of Bread"
+    ChunkOfMetal = "Chunk of Metal"
+    RepairedPitchfork = "Repaired Pitchfork"
 
     FixedMariesCart = "Fixed Maries Cart"
     MystralWoodsCleansed = "Mystral Woods Cleansed"

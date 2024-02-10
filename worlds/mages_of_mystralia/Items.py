@@ -13,6 +13,7 @@ class ItemType(str, Enum):
    Wand = "wand"
    Rune = "rune"
    Focus = "focus" #ie, Immedi, Actus, Creo, Ego
+   Essence = "essence" #aura, igni, aqua, gaea
    Upgrade = "upgrade"
    Quest = "quest"
    Event = "event"
@@ -58,10 +59,10 @@ test_items: List[ItemData] = [
     ItemData(18, ItemName.ManaLilyBulb, ItemClassification.progression, ItemType.Currency, 4),
     ItemData(19, ItemName.BagOfWares, ItemClassification.progression, ItemType.Quest, 4),
     ItemData(20, ItemName.MoveRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(21, ItemName.BigKey, ItemClassification.progression, ItemType.Quest, 10),
+    ItemData(21, ItemName.BigKey, ItemClassification.progression, ItemType.Quest, 12),
     ItemData(22, ItemName.WoodWretchElixer, ItemClassification.useful, ItemType.Upgrade),
     ItemData(23, ItemName.Token, ItemClassification.progression, ItemType.Quest),
-    ItemData(24, ItemName.FiftyGreenBeads, ItemClassification.filler, ItemType.Currency, 2),
+    ItemData(24, ItemName.FiftyGreenBeads, ItemClassification.filler, ItemType.Currency, 3),
     ItemData(25, ItemName.HomingRune, ItemClassification.useful, ItemType.Rune),
     ItemData(26, ItemName.IgniWand, ItemClassification.useful, ItemType.Wand),
     ItemData(27, ItemName.ThirtyGreenBeads, ItemClassification.filler, ItemType.Currency),
@@ -79,7 +80,7 @@ test_items: List[ItemData] = [
     ItemData(39, ItemName.TrialWand, ItemClassification.useful, ItemType.Wand),
     ItemData(40, ItemName.ProximityRune, ItemClassification.useful, ItemType.Rune),
     ItemData(41, ItemName.FifteenGreenBeads, ItemClassification.filler, ItemType.Currency),
-    ItemData(42, ItemName.TimeRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(42, ItemName.TimeRune, ItemClassification.progression, ItemType.Rune),
     ItemData(43, ItemName.Pitchfork, ItemClassification.progression, ItemType.Quest),
     ItemData(44, ItemName.SeventyFiveGreenBeads, ItemClassification.filler, ItemType.Currency),
     ItemData(45, ItemName.BoarMeat, ItemClassification.filler, ItemType.Quest),
@@ -97,7 +98,20 @@ test_items: List[ItemData] = [
     ItemData(57, ItemName.BottleForSpirits, ItemClassification.progression, ItemType.Quest),
     ItemData(58, ItemName.EtherRune, ItemClassification.filler, ItemType.Rune),
     ItemData(59, ItemName.SizeRune, ItemClassification.filler, ItemType.Rune),
-    ItemData(60, ItemName.RainRune, ItemClassification.useful, ItemType.Rune)
+    ItemData(60, ItemName.RainRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(61, ItemName.SwiftRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(62, ItemName.LeftRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(63, ItemName.PushRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(64, ItemName.Aura_Essence, ItemClassification.progression, ItemType.Essence),
+    ItemData(65, ItemName.Soul_Scepter, ItemClassification.useful, ItemType.Wand),
+    ItemData(66, ItemName.NegationScepter, ItemClassification.useful, ItemType.Wand),
+    ItemData(67, ItemName.BrokenPitchfork, ItemClassification.progression, ItemType.Quest),
+    ItemData(68, ItemName.LoavesOfBread, ItemClassification.progression, ItemType.Quest),
+    ItemData(69, ItemName.AtOnceRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(70, ItemName.Aqua_Essence, ItemClassification.progression, ItemType.Essence),
+    ItemData(71, ItemName.ExpireRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(72, ItemName.Gaea_Essence, ItemClassification.progression, ItemType.Essence),
+    ItemData(73, ItemName.ChunkOfMetal, ItemClassification.progression, ItemType.Quest)
 ]
 
 
