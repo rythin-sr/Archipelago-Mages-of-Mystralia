@@ -37,3 +37,4 @@ class RegionName():
     SunkenQuarry = "Sunken Quarry"
     OldMines = "Old Mines"
     OldMinesKeyLocked = "Old Mines Key Locked"
+    DarkTower = "Dark Tower"

@@ -51,7 +51,8 @@ connections: List[ConnectionData] = \
     ConnectionData(EntranceName.GreyleafHamlet_GreyleafHamletCaves, RegionName.Greyleaf_Hamlet_Caves),
     ConnectionData(EntranceName.Highlands_SunkenQuarry, RegionName.SunkenQuarry),
     ConnectionData(EntranceName.MystralWoodsMiningArea_OldMines, RegionName.OldMines),
-    ConnectionData(EntranceName.OldMinesKeyDoor, RegionName.OldMinesKeyLocked)
+    ConnectionData(EntranceName.OldMinesKeyDoor, RegionName.OldMinesKeyLocked),
+    ConnectionData(EntranceName.Rise_DarkTower, RegionName.DarkTower)
 ]
 
 

@@ -107,10 +107,12 @@ def set_entrance_rules(multiworld: MultiWorld, player: int):
              lambda state: can_walk_on_lava(state, player)) 
     add_rule(multiworld.get_entrance(EntranceName.Haven_WindingGlade, player),
              lambda state: state.has(ItemName.BrokenPortalStone, player))
+    add_rule(multiworld.get_entrance(EntranceName.Rise_DarkTower, player),
+             lambda state: state.has(ItemName.DefeatGhostQueen, player))
 
 
 def set_access_rules(multiworld, player):
-    add_rule(multiworld.get_location(LocationName.Victory, player),
+    add_rule(multiworld.get_location(LocationName.DarkTowerAerie, player),
              lambda state: state.can_reach(LocationName.GreyleafHamletCave_Blasius, 'Location', player) and 
              state.can_reach(LocationName.SunkenQuarry_Caelius, 'Location', player) and 
              state.can_reach(LocationName.OldMines_Drusus, 'Location', player) and 

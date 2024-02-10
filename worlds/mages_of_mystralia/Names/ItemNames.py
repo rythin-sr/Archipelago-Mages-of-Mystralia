@@ -91,4 +91,4 @@ class ItemName():
     EclipseApproaching = "Greyleaf Hamlet Eclipse Appraching"
     SkyTempleTorch = "Sky Temple Torch"
     BottledGhost = "Bottled Ghost"
-    Victory = "Victory"
+    EclipseStopped = "Eclipse Stopped"

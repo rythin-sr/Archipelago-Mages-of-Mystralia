@@ -195,7 +195,7 @@ events = [
     LocationData(None, LocationName.TheRise_GhostStatueAcrossLava, ItemName.BottledGhost, LocationType.Event, True),
     LocationData(None, LocationName.GreyleafHamlet_GraveyardGhostStatue, ItemName.BottledGhost, LocationType.Event, True),
     LocationData(None, LocationName.HighlandsUpper_GhostStatue, ItemName.BottledGhost, LocationType.Event, True),
-    LocationData(None, LocationName.Victory, ItemName.Victory, LocationType.Event, True)
+    LocationData(None, LocationName.DarkTowerAerie, ItemName.EclipseStopped, LocationType.Event, True)
 ]
 
 

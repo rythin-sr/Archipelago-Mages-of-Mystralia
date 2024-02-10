@@ -36,3 +36,4 @@ class EntranceName():
     Highlands_SunkenQuarry = "Highlands - Sunken Quarry"
     MystralWoodsMiningArea_OldMines = "MystralWoods Mining Area - OldMines"
     OldMinesKeyDoor = "OldMines - Old Mines Key Locked"
+    Rise_DarkTower = "The Rise - Dark Tower"

@@ -79,7 +79,7 @@ class MagesOfMystraliaWorld(World):
         set_access_rules(self.multiworld, self.player)
         
         self.multiworld.completion_condition[self.player] = \
-            lambda state: state.has(ItemName.Victory, self.player)
+            lambda state: state.has(ItemName.EclipseStopped, self.player)
 
     def generate_basic(self) -> None:
         """

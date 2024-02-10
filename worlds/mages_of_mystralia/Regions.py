@@ -74,9 +74,13 @@ regions: Dict[str, EntranceData] = {
         LocationName.Haven_HallOfTrialsWaveEight,
         LocationName.Haven_HallOfTrialsWaveTwelve,
         LocationName.Haven_HallOfTrialsTenMinutes,
-        LocationName.Haven_ChestNearManaFountain,
-        LocationName.Victory,
-    ], [EntranceName.Haven_WindingGlade, EntranceName.Haven_WestHaven_DetonateWall, EntranceName.Haven_MystralWoods]),
+        LocationName.Haven_ChestNearManaFountain
+    ], 
+    [
+        EntranceName.Haven_WindingGlade, 
+        EntranceName.Haven_WestHaven_DetonateWall, 
+        EntranceName.Haven_MystralWoods
+    ]),
     RegionName.WindingGlade: EntranceData(RegionName.WindingGlade, 
     [
         LocationName.WindingGlade_TeleportRunePuzzleRoom
@@ -227,7 +231,8 @@ regions: Dict[str, EntranceData] = {
     ], 
     [
         EntranceName.Rise_RiseNorth,
-        EntranceName.RiseUpperLedges
+        EntranceName.RiseUpperLedges,
+        EntranceName.Rise_DarkTower
     ]),
     RegionName.RiseNorth: EntranceData(RegionName.RiseNorth,
     [
@@ -418,6 +423,13 @@ regions: Dict[str, EntranceData] = {
         LocationName.LavaGrotto_DrainedLavaPoolPurpleBead,
         LocationName.LavaGrotto_RockPillarToCombatRoomPurpleBead,
         LocationName.LavaGrotto_Flavius
+    ],
+    [
+        
+    ]),
+    RegionName.DarkTower: EntranceData(RegionName.DarkTower, 
+    [ 
+        LocationName.DarkTowerAerie
     ],
     [
         

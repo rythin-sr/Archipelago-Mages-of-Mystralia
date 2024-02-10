@@ -164,4 +164,4 @@ class LocationName():
     SkyTempleHubNorthTorch = "Sky Temple Hub North - Torch near Detonate Rune"
     SkyTempleHubNorthTorchBehindDetonateRock = "Sky Temple Hub North - Torch behind Detonate Rock"
     SkyTempleHubEastTorchBehindDetonateRock = "Sky Temple Hub East - Torch behind Detonate Rock"
-    Victory = "Victory"
+    DarkTowerAerie = "Dark Tower - Aerie"

@@ -132,7 +132,7 @@ events: List[EventItemData] = [
     EventItemData(LocationName.TheRise_GhostStatueAcrossLava, ItemName.BottledGhost),
     EventItemData(LocationName.GreyleafHamlet_GraveyardGhostStatue, ItemName.BottledGhost),
     EventItemData(LocationName.HighlandsUpper_GhostStatue, ItemName.BottledGhost),
-    EventItemData(LocationName.Victory, ItemName.Victory)
+    EventItemData(LocationName.DarkTowerAerie, ItemName.EclipseStopped)
 ]
 
 
