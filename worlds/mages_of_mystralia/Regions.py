@@ -30,9 +30,12 @@ def create_region(multiworld: MultiWorld, player: int, regionData: EntranceData)
     for location in regionData.locations:
         location_data = location_name_to_id.get(location, None)
 
+
         if location_data is None:
             loc = MagesOfMystraliaLocation(player, location, None, region)
         else:
+            if not location_data.included(multiworld, player):
+                continue
             loc = MagesOfMystraliaLocation(player, location, location_data.id, region)
 
         region.locations.append(loc)

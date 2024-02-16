@@ -36,85 +36,99 @@ class EventItemData(ItemData):
 class MagesOfMystraliaItem(Item):
     game: str = "Mages Of Mystralia"
 
+base_id: int = 62000
 
 tutorial_items: List[ItemData] = [
-    ItemData(1, ItemName.Spellbook, ItemClassification.progression, ItemType.Wand),
-    ItemData(2, ItemName.Immedi, ItemClassification.progression, ItemType.Focus),
-    ItemData(3, ItemName.Actus, ItemClassification.progression, ItemType.Focus),
-    ItemData(4, ItemName.Creo, ItemClassification.progression, ItemType.Focus),
-    ItemData(5, ItemName.Ego, ItemClassification.progression, ItemType.Focus),
-    ItemData(6, ItemName.ApprenticeWand, ItemClassification.progression, ItemType.Wand)
+    ItemData(base_id + 1, ItemName.Spellbook, ItemClassification.progression, ItemType.Wand),
+    ItemData(base_id + 2, ItemName.Immedi, ItemClassification.progression, ItemType.Focus),
+    ItemData(base_id + 3, ItemName.Actus, ItemClassification.progression, ItemType.Focus),
+    ItemData(base_id + 4, ItemName.Creo, ItemClassification.progression, ItemType.Focus),
+    ItemData(base_id + 5, ItemName.Ego, ItemClassification.progression, ItemType.Focus),
+    ItemData(base_id + 6, ItemName.ApprenticeWand, ItemClassification.progression, ItemType.Wand)
 ]
 
 
 test_items: List[ItemData] = [
-    ItemData(10, ItemName.ManaCharm, ItemClassification.progression, ItemType.Consumable, 5),
-    ItemData(11, ItemName.Purple_Soulbead, ItemClassification.progression, ItemType.Currency, 40),
-    ItemData(12, ItemName.HealthUpgrade, ItemClassification.useful, ItemType.Upgrade, 5),
-    ItemData(13, ItemName.ManaUpgrade, ItemClassification.useful, ItemType.Upgrade, 5),
-    ItemData(14, ItemName.FiveGreenBeads, ItemClassification.filler, ItemType.Currency),
-    ItemData(15, ItemName.TeleportRune, ItemClassification.useful, ItemType.Rune),
-    ItemData(16, ItemName.DetonateRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(17, ItemName.RandomRune, ItemClassification.useful, ItemType.Rune),
-    ItemData(18, ItemName.ManaLilyBulb, ItemClassification.progression, ItemType.Currency, 4),
-    ItemData(19, ItemName.BagOfWares, ItemClassification.progression, ItemType.Quest, 4),
-    ItemData(20, ItemName.MoveRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(21, ItemName.BigKey, ItemClassification.progression, ItemType.Quest, 12),
-    ItemData(22, ItemName.WoodWretchElixer, ItemClassification.useful, ItemType.Upgrade),
-    ItemData(23, ItemName.Token, ItemClassification.progression, ItemType.Quest),
-    ItemData(24, ItemName.FiftyGreenBeads, ItemClassification.filler, ItemType.Currency, 3),
-    ItemData(25, ItemName.HomingRune, ItemClassification.useful, ItemType.Rune),
-    ItemData(26, ItemName.IgniWand, ItemClassification.useful, ItemType.Wand),
-    ItemData(27, ItemName.ThirtyGreenBeads, ItemClassification.filler, ItemType.Currency),
-    ItemData(28, ItemName.RightRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(29, ItemName.TwentyFiveGreenBeads, ItemClassification.filler, ItemType.Currency, 2),
-    ItemData(30, ItemName.MasteryRune, ItemClassification.filler, ItemType.Rune),
-    ItemData(31, ItemName.TenGreenBeads, ItemClassification.filler, ItemType.Currency),
-    ItemData(32, ItemName.SkyShard, ItemClassification.progression, ItemType.Quest),
-    ItemData(33, ItemName.IceLizardElixer, ItemClassification.useful, ItemType.Upgrade),
-    ItemData(34, ItemName.ImpactRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(35, ItemName.OverchargeRune, ItemClassification.filler, ItemType.Rune),
-    ItemData(36, ItemName.AuraWand, ItemClassification.useful, ItemType.Wand),
-    ItemData(37, ItemName.PortalStone, ItemClassification.useful, ItemType.Upgrade),
-    ItemData(38, ItemName.ArchmagesRobe, ItemClassification.useful, ItemType.Upgrade),
-    ItemData(39, ItemName.TrialWand, ItemClassification.useful, ItemType.Wand),
-    ItemData(40, ItemName.ProximityRune, ItemClassification.useful, ItemType.Rune),
-    ItemData(41, ItemName.FifteenGreenBeads, ItemClassification.filler, ItemType.Currency),
-    ItemData(42, ItemName.TimeRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(43, ItemName.Pitchfork, ItemClassification.progression, ItemType.Quest),
-    ItemData(44, ItemName.SeventyFiveGreenBeads, ItemClassification.filler, ItemType.Currency),
-    ItemData(45, ItemName.BoarMeat, ItemClassification.filler, ItemType.Quest),
-    ItemData(46, ItemName.GaeaWand, ItemClassification.useful, ItemType.Wand),
-    ItemData(47, ItemName.HotBread, ItemClassification.progression, ItemType.Quest),
-    ItemData(48, ItemName.BrokenPortalStone, ItemClassification.progression, ItemType.Quest),
-    ItemData(49, ItemName.Flowers, ItemClassification.progression, ItemType.Quest),
-    ItemData(50, ItemName.LifeStaff, ItemClassification.useful, ItemType.Wand),
-    ItemData(51, ItemName.AquaWand, ItemClassification.useful, ItemType.Wand),
-    ItemData(52, ItemName.BounceRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(53, ItemName.Badge, ItemClassification.progression, ItemType.Quest),
-    ItemData(54, ItemName.DuplicateRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(55, ItemName.InverseRune, ItemClassification.filler, ItemType.Rune),
-    ItemData(56, ItemName.GhostQueenElixer, ItemClassification.useful, ItemType.Upgrade),
-    ItemData(57, ItemName.BottleForSpirits, ItemClassification.progression, ItemType.Quest),
-    ItemData(58, ItemName.EtherRune, ItemClassification.filler, ItemType.Rune),
-    ItemData(59, ItemName.SizeRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(60, ItemName.RainRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(61, ItemName.SwiftRune, ItemClassification.filler, ItemType.Rune),
-    ItemData(62, ItemName.LeftRune, ItemClassification.progression, ItemType.Rune),
-    ItemData(63, ItemName.PushRune, ItemClassification.filler, ItemType.Rune),
-    ItemData(64, ItemName.Aura_Essence, ItemClassification.progression, ItemType.Essence),
-    ItemData(65, ItemName.Soul_Scepter, ItemClassification.useful, ItemType.Wand),
-    ItemData(66, ItemName.NegationScepter, ItemClassification.useful, ItemType.Wand),
-    ItemData(67, ItemName.BrokenPitchfork, ItemClassification.progression, ItemType.Quest),
-    ItemData(68, ItemName.LoavesOfBread, ItemClassification.progression, ItemType.Quest),
-    ItemData(69, ItemName.AtOnceRune, ItemClassification.filler, ItemType.Rune),
-    ItemData(70, ItemName.Aqua_Essence, ItemClassification.progression, ItemType.Essence),
-    ItemData(71, ItemName.ExpireRune, ItemClassification.filler, ItemType.Rune),
-    ItemData(72, ItemName.Gaea_Essence, ItemClassification.progression, ItemType.Essence),
-    ItemData(73, ItemName.ChunkOfMetal, ItemClassification.progression, ItemType.Quest),
-    ItemData(74, ItemName.RodOfTheBerserker, ItemClassification.filler, ItemType.Wand),
-    ItemData(75, ItemName.TwentyGreenBeads, ItemClassification.filler, ItemType.Currency),
-    ItemData(76, ItemName.PeriodicRune, ItemClassification.progression, ItemType.Rune)
+    ItemData(base_id + 21, ItemName.BigKey, ItemClassification.progression, ItemType.Consumable, 12),
+    ItemData(base_id + 18, ItemName.ManaLilyBulb, ItemClassification.progression, ItemType.Currency, 4),
+    ItemData(base_id + 10, ItemName.ManaCharm, ItemClassification.progression, ItemType.Consumable, 5),
+    ItemData(base_id + 11, ItemName.Purple_Soulbead, ItemClassification.progression, ItemType.Currency, 40),
+    ItemData(base_id + 12, ItemName.HealthUpgrade, ItemClassification.useful, ItemType.Upgrade, 5),
+    ItemData(base_id + 13, ItemName.ManaUpgrade, ItemClassification.useful, ItemType.Upgrade, 5),
+    ItemData(base_id + 22, ItemName.WoodWretchElixer, ItemClassification.useful, ItemType.Upgrade),
+    ItemData(base_id + 33, ItemName.IceLizardElixer, ItemClassification.useful, ItemType.Upgrade),
+    ItemData(base_id + 56, ItemName.GhostQueenElixer, ItemClassification.useful, ItemType.Upgrade),
+    ItemData(base_id + 100, ItemName.MystralianElixer, ItemClassification.useful, ItemType.Upgrade),
+    ItemData(base_id + 101, ItemName.AfterLifeElixer, ItemClassification.useful, ItemType.Upgrade),
+    ItemData(base_id + 37, ItemName.PortalStone, ItemClassification.useful, ItemType.Upgrade),
+    ItemData(base_id + 38, ItemName.ArchmagesRobe, ItemClassification.useful, ItemType.Upgrade),
+
+    ItemData(base_id + 64, ItemName.Aura_Essence, ItemClassification.progression, ItemType.Essence),
+    ItemData(base_id + 70, ItemName.Aqua_Essence, ItemClassification.progression, ItemType.Essence),
+    ItemData(base_id + 72, ItemName.Gaea_Essence, ItemClassification.progression, ItemType.Essence),
+    ItemData(base_id + 102, ItemName.Igni_Essence, ItemClassification.progression, ItemType.Essence),
+
+    ItemData(base_id + 32, ItemName.SkyShard, ItemClassification.progression, ItemType.Quest),
+    ItemData(base_id + 48, ItemName.BrokenPortalStone, ItemClassification.progression, ItemType.Quest),
+
+    ItemData(base_id + 26, ItemName.IgniWand, ItemClassification.useful, ItemType.Wand),
+    ItemData(base_id + 36, ItemName.AuraWand, ItemClassification.useful, ItemType.Wand),
+    ItemData(base_id + 46, ItemName.GaeaWand, ItemClassification.useful, ItemType.Wand),
+    ItemData(base_id + 51, ItemName.AquaWand, ItemClassification.useful, ItemType.Wand),
+    ItemData(base_id + 50, ItemName.LifeStaff, ItemClassification.useful, ItemType.Wand),
+    ItemData(base_id + 65, ItemName.Soul_Scepter, ItemClassification.useful, ItemType.Wand),
+    ItemData(base_id + 66, ItemName.NegationScepter, ItemClassification.useful, ItemType.Wand),
+    ItemData(base_id + 74, ItemName.RodOfTheBerserker, ItemClassification.filler, ItemType.Wand),
+    ItemData(base_id + 39, ItemName.TrialWand, ItemClassification.useful, ItemType.Wand),
+    
+    ItemData(base_id + 15, ItemName.TeleportRune, ItemClassification.useful, ItemType.Rune),
+    ItemData(base_id + 16, ItemName.DetonateRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(base_id + 17, ItemName.RandomRune, ItemClassification.useful, ItemType.Rune),
+    ItemData(base_id + 20, ItemName.MoveRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(base_id + 25, ItemName.HomingRune, ItemClassification.useful, ItemType.Rune),
+    ItemData(base_id + 28, ItemName.RightRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(base_id + 30, ItemName.MasteryRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(base_id + 34, ItemName.ImpactRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(base_id + 35, ItemName.OverchargeRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(base_id + 40, ItemName.ProximityRune, ItemClassification.useful, ItemType.Rune),
+    ItemData(base_id + 42, ItemName.TimeRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(base_id + 52, ItemName.BounceRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(base_id + 54, ItemName.DuplicateRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(base_id + 55, ItemName.InverseRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(base_id + 58, ItemName.EtherRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(base_id + 59, ItemName.SizeRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(base_id + 60, ItemName.RainRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(base_id + 61, ItemName.SwiftRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(base_id + 62, ItemName.LeftRune, ItemClassification.progression, ItemType.Rune),
+    ItemData(base_id + 63, ItemName.PushRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(base_id + 69, ItemName.AtOnceRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(base_id + 71, ItemName.ExpireRune, ItemClassification.filler, ItemType.Rune),
+    ItemData(base_id + 76, ItemName.PeriodicRune, ItemClassification.progression, ItemType.Rune)
+]
+
+quest_items: List[ItemData] = [
+    ItemData(base_id + 19, ItemName.BagOfWares, ItemClassification.progression, ItemType.Quest, 4),
+    ItemData(base_id + 23, ItemName.Token, ItemClassification.progression, ItemType.Quest),
+    ItemData(base_id + 43, ItemName.Pitchfork, ItemClassification.progression, ItemType.Quest),
+    ItemData(base_id + 45, ItemName.BoarMeat, ItemClassification.progression, ItemType.Quest),
+    ItemData(base_id + 47, ItemName.HotBread, ItemClassification.progression, ItemType.Quest),
+    ItemData(base_id + 49, ItemName.Flowers, ItemClassification.progression, ItemType.Quest),
+    ItemData(base_id + 53, ItemName.Badge, ItemClassification.progression, ItemType.Quest),
+    ItemData(base_id + 57, ItemName.BottleForSpirits, ItemClassification.progression, ItemType.Quest),
+    ItemData(base_id + 67, ItemName.BrokenPitchfork, ItemClassification.progression, ItemType.Quest),
+    ItemData(base_id + 68, ItemName.LoavesOfBread, ItemClassification.progression, ItemType.Quest),
+    ItemData(base_id + 73, ItemName.ChunkOfMetal, ItemClassification.progression, ItemType.Quest),
+]
+
+filler_items: List[ItemData] = [
+    ItemData(base_id + 14, ItemName.FiveGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(base_id + 24, ItemName.FiftyGreenBeads, ItemClassification.filler, ItemType.Currency, 3),
+    ItemData(base_id + 27, ItemName.ThirtyGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(base_id + 31, ItemName.TenGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(base_id + 75, ItemName.TwentyGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(base_id + 41, ItemName.FifteenGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(base_id + 44, ItemName.SeventyFiveGreenBeads, ItemClassification.filler, ItemType.Currency),
+    ItemData(base_id + 29, ItemName.TwentyFiveGreenBeads, ItemClassification.filler, ItemType.Currency, 2),
 ]
 
 
@@ -136,7 +150,7 @@ events: List[EventItemData] = [
 ]
 
 
-all_items: List[ItemData] = tutorial_items + test_items + events
+all_items: List[ItemData] = tutorial_items + test_items + events + quest_items + filler_items
 item_table: Dict[str, ItemData] = {item.itemName: item for item in all_items}
 
 
@@ -166,6 +180,6 @@ def create_items(multiworld: MultiWorld, world: World, player: int):
             multiworld.itempool.append(ap_item)
             sum_locations -= 1
 
-    for item in multiworld.random.choices(population=test_items, k=sum_locations):
+    for item in multiworld.random.choices(population=filler_items, k=sum_locations):
         ap_item = create_item(item.itemName, player)
         multiworld.itempool.append(ap_item)
