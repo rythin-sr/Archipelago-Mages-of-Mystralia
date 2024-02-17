@@ -52,7 +52,7 @@ class MagesOfMystraliaWorld(World):
         Called per player before any items or locations are created. You can set properties on your world here.
         Already has access to player options and RNG.
         """
-        pass
+        self.multiworld.local_early_items[self.player][ItemName.DetonateRune] = 1
 
     def create_regions(self) -> None:
         """

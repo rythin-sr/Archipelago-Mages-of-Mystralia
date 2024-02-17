@@ -99,30 +99,18 @@ regions: Dict[str, EntranceData] = {
     [
         LocationName.MystralWoods_ManaLilyCelestialPuzzle,
         LocationName.MystralWoods_ManaLily,
-        LocationName.MystalWoodsMariesCart,
-        LocationName.MystralWoods_TorchPuzzleOverchargeRune
-    ],
-    [
-        EntranceName.MystralWoods_GreyleafHamletSouth,
-        EntranceName.MystralWoods_PostCart,
-        EntranceName.MystralWoods_MystralMiningArea
-    ]),
-    RegionName.MystralWoodsPostCart: EntranceData(RegionName.MystralWoodsPostCart, 
-    [
-        LocationName.MystralWoods_PostCart_PurpleBeadPuzzleRoom
-    ],
-    [
-        EntranceName.MystralWoodsPostCart_GoblinCamp
-    ]),
-    RegionName.MystralWoodsGoblinCamp: EntranceData(RegionName.MystralWoodsGoblinCamp, 
-    [
+        LocationName.MystralWoods_TorchPuzzleOverchargeRune,
+        LocationName.MystralWoods_PostCart_PurpleBeadPuzzleRoom,
         LocationName.MystralWoods_GoblinCamp_BagOfWares
     ],
     [
-        EntranceName.MystralWoodsGoblinCamp_Lardee
+        EntranceName.MystralWoods_GreyleafHamletSouth,
+        EntranceName.MystralWoods_MystralMiningArea,
+        EntranceName.MystralWoods_Lardee
     ]),
     RegionName.MystralWoodsLardeeArea: EntranceData(RegionName.MystralWoodsLardeeArea, 
     [ 
+        LocationName.MystralWoodsMidBoss,
         LocationName.MystralWoods_Lardee_MoveRune,
         LocationName.MystralWoods_SuperLardee_AuraWand
     ],
@@ -135,26 +123,12 @@ regions: Dict[str, EntranceData] = {
         LocationName.MystralWoods_DeepWoods_BagOfWaresOne,
         LocationName.MystralWoods_DeepWoods_BagOfWaresTwo,
         LocationName.MystralWoods_DeepWoods_StrangeOldGoblin,
-        LocationName.MystralWoods_DeepWoods_StrangeOldGoblinRippingYouOff
-    ],
-    [
-        EntranceName.MystralWoodsDeepWoods_Twiggs,
-        EntranceName.MystralWoodsDeepWoods_BackWoods
-    ]),
-    RegionName.MystralWoodsTwiggs: EntranceData(RegionName.MystralWoodsTwiggs, 
-    [
-        LocationName.WoodWretchTwiggsFight,
+        LocationName.MystralWoods_DeepWoods_StrangeOldGoblinRippingYouOff,
+        LocationName.MystralWoodsBoss,
         LocationName.MystralWoods_Twiggs_LifeElixer
     ],
     [
-    ]),
-    RegionName.MystralWoodsBackWoods: EntranceData(RegionName.MystralWoodsBackWoods, 
-    [ 
-
-    ],
-    [
-        EntranceName.MystralWoodsBackWoods_GreyleafHamletNorth,
-        EntranceName.MystralWoodsBackWoods_BackWoodsWest
+        EntranceName.MystralWoodsDeepWoods_GreyleafHamletNorth
     ]),
     RegionName.MystralWoodsBackWoodsWest: EntranceData(RegionName.MystralWoodsBackWoodsWest, 
     [ 
@@ -182,7 +156,6 @@ regions: Dict[str, EntranceData] = {
     ]),
     RegionName.Greyleaf_Hamlet_North: EntranceData(RegionName.Greyleaf_Hamlet_North,
     [
-        LocationName.MentorGreyleafhamlet,
         LocationName.GreyleafHamlet_GraveyardGhostStatue
     ], 
     [
@@ -192,6 +165,7 @@ regions: Dict[str, EntranceData] = {
     [
         LocationName.GreyleafHamlet_JeffsGiftForwife,
         LocationName.GreyleafHamlet_MariesBagOfWaresResult,
+        LocationName.GreyleafHamlet_RachelMarieQuest,
         LocationName.GreyleafHamlet_FireRainPuzzle, #burning greyleaf
         LocationName.GreyleafHamlet_BurnedTowerPuzzle, #burning greyleaf
         LocationName.GreyleafHamlet_BarTorchPuzzleRoom, #burning greyleaf
@@ -207,7 +181,8 @@ regions: Dict[str, EntranceData] = {
     RegionName.Greyleaf_Hamlet_Caves: EntranceData(RegionName.Greyleaf_Hamlet_Caves,
     [
         LocationName.GreyleafHamletCave_CelestialPuzzle,
-        LocationName.GreyleafHamletCave_Blasius
+        LocationName.GreyleafHamletSageOfAura,
+        LocationName.GreyleafHamletCave_AuraEssence
     ], 
     [
     ]),
@@ -292,7 +267,7 @@ regions: Dict[str, EntranceData] = {
     [
         LocationName.SkyTempleUpperBigKey,
         LocationName.SkyTempleUpperCombatPuzzleRoom,
-        LocationName.SkyTempleUpperAncientLizardSleet
+        LocationName.SkyTempleBoss
     ], 
     [
     ]),
@@ -395,7 +370,8 @@ regions: Dict[str, EntranceData] = {
         LocationName.SunkenQuarry_CelestialPuzzleNorthEast,
         LocationName.SunkenQuarry_NorthWaterChest,
         LocationName.SunkenQuarry_NorthCombatArenaChest,
-        LocationName.SunkenQuarry_Caelius #locked behind the royal blobs boss fight
+        LocationName.SunkenQuarrySageOfAqua,
+        LocationName.SunkenQuarry_AquaEssence #locked behind the royal blobs boss fight
     ],
     [
         
@@ -413,7 +389,8 @@ regions: Dict[str, EntranceData] = {
     [ 
         LocationName.OldMines_CrystalCartPuzzle,
         LocationName.OldMines_CelestialPuzzle,
-        LocationName.OldMines_Drusus
+        LocationName.OldMinesSageOfGaea,
+        LocationName.OldMines_GaeaEssence
     ],
     [
         
@@ -425,7 +402,8 @@ regions: Dict[str, EntranceData] = {
         LocationName.LavaGrotto_RockPillarPurpleBead,
         LocationName.LavaGrotto_DrainedLavaPoolPurpleBead,
         LocationName.LavaGrotto_RockPillarToCombatRoomPurpleBead,
-        LocationName.LavaGrotto_Flavius
+        LocationName.LavaGrottoSageOfIgni,
+        LocationName.LavaGrotto_IgniEssence
     ],
     [
         
