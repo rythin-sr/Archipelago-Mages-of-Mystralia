@@ -22,7 +22,7 @@ class MagesOfMystraliaWeb(WebWorld):
 
     setup_en = Tutorial(
         "Multiworld Setup Guide",
-        "A guide to setting up Mages Of Mystralia for an Archipelago Multiworld.",
+        "A guide to setting up Mages of Mystralia for an Archipelago Multiworld.",
         "English",
         "setup_en.md",
         "setup/en",
@@ -33,9 +33,9 @@ class MagesOfMystraliaWeb(WebWorld):
 
 class MagesOfMystraliaWorld(World):
     """
-    Mages Of Mystralia implementation, place holder text!
+    Mages of Mystralia implementation, place holder text!
     """
-    game = "Mages Of Mystralia"
+    game = "Mages of Mystralia"
     topology_present = False
 
     data_version = 1
